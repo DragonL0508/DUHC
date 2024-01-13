@@ -1,0 +1,2 @@
+execute as @a[tag=!mined_leaves] at @s if score @s mined.oak_leaves matches 1.. run function duhc:scenarios/lucky_leaves/message
+execute as @a[tag=!mined_leaves] at @s if score @s mined.dark_oak_leaves matches 1.. run function duhc:scenarios/lucky_leaves/message

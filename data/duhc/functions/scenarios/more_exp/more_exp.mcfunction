@@ -1,0 +1,1 @@
+execute as @e[type=experience_orb,tag=!doubled] run function duhc:scenarios/more_exp/doubled

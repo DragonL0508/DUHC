@@ -1,0 +1,10 @@
+execute if data block ~ ~ ~ Items[{Slot:2b}] run function duhc:game/custom_craft/ui/drop_items {slot:2}
+execute if data block ~ ~ ~ Items[{Slot:3b}] run function duhc:game/custom_craft/ui/drop_items {slot:3}
+execute if data block ~ ~ ~ Items[{Slot:4b}] run function duhc:game/custom_craft/ui/drop_items {slot:4}
+execute if data block ~ ~ ~ Items[{Slot:11b}] run function duhc:game/custom_craft/ui/drop_items {slot:11}
+execute if data block ~ ~ ~ Items[{Slot:12b}] run function duhc:game/custom_craft/ui/drop_items {slot:12}
+execute if data block ~ ~ ~ Items[{Slot:13b}] run function duhc:game/custom_craft/ui/drop_items {slot:13}
+execute if data block ~ ~ ~ Items[{Slot:20b}] run function duhc:game/custom_craft/ui/drop_items {slot:20}
+execute if data block ~ ~ ~ Items[{Slot:21b}] run function duhc:game/custom_craft/ui/drop_items {slot:21}
+execute if data block ~ ~ ~ Items[{Slot:22b}] run function duhc:game/custom_craft/ui/drop_items {slot:22}
+execute if data block ~ ~ ~ Items[{Slot:15b}] run function duhc:game/custom_craft/ui/drop_items {slot:15}

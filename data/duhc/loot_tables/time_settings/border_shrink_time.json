@@ -1,0 +1,61 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gray_stained_glass",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "縮圈持續: ",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "score": {
+                        "name": "border_shrink.time",
+                        "objective": "time_settings"
+                      },
+                      "color": "green",
+                      "bold": true,
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": " 分鐘",
+                          "color": "yellow",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "§7邊界從最大至最小所需的時間。"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{clear:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

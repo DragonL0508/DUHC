@@ -1,0 +1,2 @@
+execute as @e[type=item,nbt={Item:{id:"minecraft:apple",tag:{golden_apple:1b}}}] at @s if predicate duhc:random_chance/50 run data merge entity @s {Item:{id:"minecraft:golden_apple"}}
+execute as @e[type=item,nbt={Item:{id:"minecraft:apple",tag:{golden_apple:1b}}}] run data merge entity @s {Item:{tag:{golden_apple:0b}}}

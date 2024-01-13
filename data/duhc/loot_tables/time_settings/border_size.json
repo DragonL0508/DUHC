@@ -1,0 +1,75 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gray_concrete",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "邊界大小: ",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "score": {
+                        "name": "border.size",
+                        "objective": "time_settings"
+                      },
+                      "color": "green",
+                      "bold": true,
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": "x",
+                          "color": "green",
+                          "bold": true,
+                          "italic": false,
+                          "extra": [
+                            {
+                              "score": {
+                                "name": "border.size",
+                                "objective": "time_settings"
+                              },
+                              "color": "green",
+                              "bold": true,
+                              "italic": false
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "§7邊界的起始大小，"
+                  },
+                  {
+                    "text": "§7也就是玩家能夠活動的區域大小。"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{clear:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

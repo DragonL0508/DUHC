@@ -1,0 +1,17 @@
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:0b}]} run function duhc:game/custom_craft/ui/drop_items {slot:0}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:1b}]} run function duhc:game/custom_craft/ui/drop_items {slot:1}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:5b}]} run function duhc:game/custom_craft/ui/drop_items {slot:5}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:6b}]} run function duhc:game/custom_craft/ui/drop_items {slot:6}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:7b}]} run function duhc:game/custom_craft/ui/drop_items {slot:7}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:8b}]} run function duhc:game/custom_craft/ui/drop_items {slot:8}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:9b}]} run function duhc:game/custom_craft/ui/drop_items {slot:9}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:10b}]} run function duhc:game/custom_craft/ui/drop_items {slot:10}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:14b}]} run function duhc:game/custom_craft/ui/drop_items {slot:14}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:16b}]} run function duhc:game/custom_craft/ui/drop_items {slot:16}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:17b}]} run function duhc:game/custom_craft/ui/drop_items {slot:17}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:18b}]} run function duhc:game/custom_craft/ui/drop_items {slot:18}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:19b}]} run function duhc:game/custom_craft/ui/drop_items {slot:19}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:23b}]} run function duhc:game/custom_craft/ui/drop_items {slot:23}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:24b}]} run function duhc:game/custom_craft/ui/drop_items {slot:24}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:25b}]} run function duhc:game/custom_craft/ui/drop_items {slot:25}
+execute unless block ~ ~ ~ barrel{Items:[{tag:{crafter_ui:1b},Slot:26b}]} run function duhc:game/custom_craft/ui/drop_items {slot:26}

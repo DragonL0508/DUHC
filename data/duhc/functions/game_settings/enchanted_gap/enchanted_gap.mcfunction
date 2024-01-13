@@ -1,0 +1,2 @@
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:enchanted_golden_apple"}]}] run tellraw @s [{"text":"DUHC | ","bold":true,"color":"#FFE5AD"},{"text": "§6附魔金蘋果§7被轉換成§6八個金磚§7和§6蘋果§7 !"}]
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:enchanted_golden_apple"}]}] run function duhc:game_settings/enchanted_gap/clear

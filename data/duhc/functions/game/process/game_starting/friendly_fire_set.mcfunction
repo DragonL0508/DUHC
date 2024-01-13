@@ -1,0 +1,1 @@
+$team modify $(player_id) friendlyFire true

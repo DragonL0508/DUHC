@@ -1,0 +1,12 @@
+data merge storage time_settings:nametag {item_path:"nametag",scoreboard:nametag,max:100,min:0,n:5,value:1}
+data merge storage time_settings:nether {item_path:"nether",scoreboard:nether,max:100,min:0,n:5,value:2}
+data merge storage time_settings:daylight {item_path:"daylight",scoreboard:daylight,max:100,min:0,n:5,value:3}
+data merge storage time_settings:peaceful {item_path:"peaceful",scoreboard:peaceful,max:100,min:0,n:5,value:4}
+data merge storage time_settings:last_heal {item_path:"last_heal",scoreboard:last_heal,max:100,min:0,n:5,value:5}
+data merge storage time_settings:player_glow {item_path:"player_glow",scoreboard:player_glow,max:100,min:0,n:5,value:6}
+data merge storage time_settings:saturation {item_path:"saturation",scoreboard:saturation,max:100,min:0,n:5,value:7}
+data merge storage time_settings:border_time {item_path:"border_time",scoreboard:"border.time",max:100,min:0,n:5,value:8}
+data merge storage time_settings:border_shrink_time {item_path:"border_shrink_time",scoreboard:"border_shrink.time",max:100,min:0,n:5,value:9}
+data merge storage time_settings:border_size {item_path:"border_size",scoreboard:"border.size",max:30000,min:100,n:100,value:10}
+data merge storage time_settings:border_last_size {item_path:"border_last_size",scoreboard:"border.lastsize",max:128,min:16,n:16,value:11}
+data merge storage time_settings:apple_drop {item_path:"apple_drop",scoreboard:"apple_drop",max:1000,min:0,n:5,value:12}

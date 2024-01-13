@@ -1,0 +1,1 @@
+item replace block ~ ~ ~ container.15 with iron_pickaxe{display:{Name:'{"text":"冶煉鎬","color":"green","bold":true,"italic":false}'},Enchantments:[{id:"minecraft:efficiency",lvl:1s}],crafter_ui:1b} 1

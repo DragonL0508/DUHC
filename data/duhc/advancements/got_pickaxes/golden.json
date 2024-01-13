@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "pickaxe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:golden_pickaxe"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "duhc:scenarios/hastey_boy/triggers/golden_pickaxe"
+    }
+  }
+  

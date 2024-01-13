@@ -1,0 +1,61 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:name_tag",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "名條顯示: ",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "score": {
+                        "name": "nametag",
+                        "objective": "time_settings"
+                      },
+                      "color": "green",
+                      "bold": true,
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": " 分鐘",
+                          "color": "yellow",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "§7在指定時間前名條會隱藏。"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{clear:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

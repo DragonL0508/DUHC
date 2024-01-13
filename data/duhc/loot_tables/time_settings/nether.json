@@ -1,0 +1,64 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:obsidian",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "開放地域: ",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "score": {
+                        "name": "nether",
+                        "objective": "time_settings"
+                      },
+                      "color": "green",
+                      "bold": true,
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": " 分鐘",
+                          "color": "yellow",
+                          "bold": false,
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "§7在指定時間前開放進入地域，"
+                  },
+                  {
+                    "text": "§7若在指定時間後待在地域會遭到§6凋零懲罰§7。"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{clear:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

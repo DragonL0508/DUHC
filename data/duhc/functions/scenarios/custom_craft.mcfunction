@@ -1,0 +1,2 @@
+#craft crafter
+execute as @e[type=item,nbt={Item:{id:"minecraft:crafting_table",Count:1b}}] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:copper_ingot",Count:1b}}] run function duhc:game/crafter/make_crafter

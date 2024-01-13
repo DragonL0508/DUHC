@@ -1,0 +1,1 @@
+data merge storage recipe:smelting_pickaxe {slot1:raw_iron,slot2:raw_iron,slot3:raw_iron,slot4:raw_copper,slot5:stick,slot6:raw_copper,slot7:coal,slot8:stick,slot9:coal,result:smelting_pickaxe}

@@ -1,0 +1,2 @@
+difficulty peaceful
+difficulty hard

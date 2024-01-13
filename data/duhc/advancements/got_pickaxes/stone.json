@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "pickaxe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:stone_pickaxe"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "duhc:scenarios/hastey_boy/triggers/stone_pickaxe"
+    }
+  }
+  

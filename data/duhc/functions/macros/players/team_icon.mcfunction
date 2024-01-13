@@ -1,0 +1,1 @@
+$execute store result storage $(player_id) icon int 1 run scoreboard players get @s icon_select

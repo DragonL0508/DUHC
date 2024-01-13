@@ -1,0 +1,1 @@
+execute as @a if score @s enchant matches 1.. at @s run damage @s 1 magic

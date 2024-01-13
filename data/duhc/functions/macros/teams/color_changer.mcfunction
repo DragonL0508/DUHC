@@ -1,0 +1,10 @@
+$execute if data storage this {color:1} run team modify $(team) color gray
+$execute if data storage this {color:2} run team modify $(team) color red
+$execute if data storage this {color:3} run team modify $(team) color dark_red
+$execute if data storage this {color:4} run team modify $(team) color aqua
+$execute if data storage this {color:5} run team modify $(team) color blue
+$execute if data storage this {color:6} run team modify $(team) color yellow
+$execute if data storage this {color:7} run team modify $(team) color gold
+$execute if data storage this {color:8} run team modify $(team) color green
+$execute if data storage this {color:9} run team modify $(team) color light_purple
+$execute if data storage this {color:10} run team modify $(team) color dark_purple

@@ -1,0 +1,80 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:apple",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "蘋果掉落機率: ",
+                  "color": "yellow",
+                  "bold": false,
+                  "italic": false,
+                  "extra": [
+                    {
+                      "score": {
+                        "name": "apple_drop.int",
+                        "objective": "time_settings"
+                      },
+                      "color": "green",
+                      "bold": true,
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": ".",
+                          "color": "green",
+                          "bold": true,
+                          "italic": false,
+                          "extra": [
+                            {
+                              "score": {
+                                "name": "apple_drop.float",
+                                "objective": "time_settings"
+                              },
+                              "color": "green",
+                              "bold": true,
+                              "italic": false,
+                              "extra": [
+                                {
+                                  "text": "%",
+                                  "color": "green",
+                                  "bold": true,
+                                  "italic": false
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "§7橡木樹葉掉落蘋果的機率。"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{clear:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
