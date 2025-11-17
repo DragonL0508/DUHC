@@ -1,0 +1,7 @@
+{
+    "pack": {
+      "description": "一個全新版本，可持續維護的UHC核心。",
+      "min_format": 88,
+      "max_format": 88
+    }
+  }
