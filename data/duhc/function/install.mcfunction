@@ -22,6 +22,7 @@ scoreboard objectives add player.lobby_move dummy
 scoreboard objectives add player.team dummy
 scoreboard objectives add player.ui.refresh dummy
 scoreboard objectives add player.duhc dummy
+scoreboard objectives add player.ui.page dummy
 
 scoreboard objectives setdisplay sidebar sidebar
 scoreboard objectives modify sidebar numberformat blank

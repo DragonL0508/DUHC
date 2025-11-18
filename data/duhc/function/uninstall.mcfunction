@@ -22,6 +22,7 @@ scoreboard objectives remove player.lobby_move
 scoreboard objectives remove player.team
 scoreboard objectives remove player.ui.refresh
 scoreboard objectives remove player.duhc
+scoreboard objectives remove player.ui.page
 kill @e[tag=duhc.lobby]
 kill @e[tag=duhc.lobby.display_entity]
 kill @e[tag=duhc.lobby.interaction]

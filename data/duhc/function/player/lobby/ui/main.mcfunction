@@ -6,6 +6,8 @@
 #By DragonL
 #--------------------------------------------------
 
+scoreboard players add @s player.ui.page 0
+
 execute if score @s player.duhc matches 1 run function duhc:player/lobby/ui/player/use
 execute if score @s player.duhc matches 2 run function duhc:player/lobby/ui/admin/use
 

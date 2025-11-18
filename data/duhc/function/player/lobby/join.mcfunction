@@ -9,4 +9,4 @@
 gamemode adventure @s
 execute at @n[type=marker, tag=duhc.lobby] run tp @s ~ ~ ~
 function duhc:chat/system/format {target:"@s",msg:"你回到了遊戲!"}
-team join ffa @s
+scoreboard players set @s player.team 0

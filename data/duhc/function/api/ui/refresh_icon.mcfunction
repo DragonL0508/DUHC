@@ -6,15 +6,15 @@
 #By DragonL
 #--------------------------------------------------
 
-$clear @s *[custom_data~{ui.$(id):true}]
-$item replace entity @s inventory.$(slot) with $(icon) 1
+$item replace entity @s inventory.$(slot) with paper 1
+$item modify entity @s inventory.$(slot) {function:"set_components",components:{item_model:"minecraft:$(icon)"}}
 $item modify entity @s inventory.$(slot) {function:"set_custom_data", tag:{"ui.button":true, "ui.$(id)":true}}
 
-# title and desc
-$item modify entity @s inventory.$(slot) {function:"set_name", name:"$(title)"}
-$item modify entity @s inventory.$(slot) duhc:lore/section_divider
+# title
+$function duhc:api/ui/set_title {slot:$(slot), title:"$(title)"}
 
-$item modify entity @s inventory.$(slot) {function:"minecraft:set_lore",lore:$(desc),mode:"append"}
+# desc
+$function duhc:api/ui/set_desc {slot:$(slot), desc:$(desc)}
 
-$item modify entity @s inventory.$(slot) duhc:lore/blank
-$item modify entity @s inventory.$(slot) duhc:lore/left_click
+# click hint
+$function duhc:api/ui/set_click_hint {slot:$(slot), click:"$(click)"}

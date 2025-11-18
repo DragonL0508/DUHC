@@ -6,11 +6,11 @@
 #By DragonL
 #--------------------------------------------------
 
-execute if score @s player.team matches ..-1 run scoreboard players set @s player.team 0
 execute if score @s player.team > team_count settings run scoreboard players set @s player.team 0
 
 scoreboard players add @s player.team 0
 execute if score @s player.team matches 0 run return run team join ffa @s
+execute if score @s player.team matches -1 run return run team join spec @s
 
 scoreboard players operation #temp system = @s player.team
 scoreboard players remove #temp system 1

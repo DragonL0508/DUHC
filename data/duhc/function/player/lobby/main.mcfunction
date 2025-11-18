@@ -22,8 +22,8 @@ function duhc:player/lobby/actionbar
 function duhc:player/lobby/ui/main
 
 # is admin?
-execute if entity @s[gamemode=creative] unless score @s player.duhc matches 2 run function duhc:player/admin/message
-execute unless entity @s[gamemode=creative] run scoreboard players set @s player.duhc 1
+execute if entity @s[tag=duhc.admin] unless score @s player.duhc matches 2 run function duhc:player/admin/join
+execute if entity @s[tag=duhc.admin] if score @s player.duhc matches 2 run function duhc:player/admin/leave
 
 # potion effect
 effect give @s saturation infinite 100 true

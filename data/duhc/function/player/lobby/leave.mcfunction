@@ -11,4 +11,4 @@ playsound entity.shulker_bullet.hit player @a ~ ~ ~ 0.5 0.9
 function duhc:chat/system/format {target:"@s",msg:"你成為了旁觀者，飛回大廳即可再次加入遊戲!"}
 
 gamemode spectator @s
-team join spec @s
+scoreboard players set @s player.team -1
