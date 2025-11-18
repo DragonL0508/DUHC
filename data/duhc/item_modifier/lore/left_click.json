@@ -1,0 +1,5 @@
+{
+    "function": "set_lore",
+    "lore": [{"text": "► 左鍵點擊","color": "#FFE5AD","italic": false}],
+    "mode": "append"
+}

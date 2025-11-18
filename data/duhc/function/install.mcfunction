@@ -6,3 +6,88 @@
 #By DragonL
 #--------------------------------------------------
 
+#
+execute if score #install system matches 1 run return run function duhc:chat/system/format {target:"@s",msg:"你已經安裝DUHC了，如果要重新安裝，請先使用 §e/function duhc:uninstall §f解除安裝"}
+
+# Scorebaord
+scoreboard objectives add system dummy
+scoreboard objectives add temp dummy
+scoreboard objectives add sidebar dummy
+scoreboard objectives add tick dummy
+scoreboard objectives add settings dummy
+scoreboard objectives add player.health health
+scoreboard objectives add player.walk custom:walk_one_cm
+scoreboard objectives add player.sprint custom:sprint_one_cm
+scoreboard objectives add player.lobby_move dummy
+scoreboard objectives add player.team dummy
+scoreboard objectives add player.ui.refresh dummy
+scoreboard objectives add player.duhc dummy
+
+scoreboard objectives setdisplay sidebar sidebar
+scoreboard objectives modify sidebar numberformat blank
+scoreboard objectives modify sidebar displayname [{"color":"#FFE5AD","text":"D",bold:true},{"color":"#FFE3A2","text":"U",bold:true},{"color":"#FFE298","text":"H",bold:true},{"color":"#FFE08D","text":"C ",bold:true},{"color":"#FFDF82","text":"C",bold:true},{"color":"#FFDD77","text":"o",bold:true},{"color":"#FFDB6D","text":"r",bold:true},{"color":"#FFD857","text":"e",bold:true}]
+
+scoreboard players set #install system 1
+scoreboard players set state system 0
+
+# default settings
+scoreboard players set team_select settings 1
+scoreboard players set team_count settings 8
+
+# Gamerule
+weather clear
+gamerule doWeatherCycle false
+gamerule sendCommandFeedback false
+gamerule commandBlockOutput false
+gamerule spawnRadius 0
+gamerule fallDamage false
+gamerule locatorBar false
+gamerule doInsomnia false
+gamerule pvp false
+
+# Team
+team add sidebar.00
+team join sidebar.00 §0
+team add sidebar.01
+team join sidebar.01 §1
+team add sidebar.02
+team join sidebar.02 §2
+team add sidebar.03
+team join sidebar.03 §3
+team add sidebar.04
+team join sidebar.04 §4
+team add sidebar.05
+team join sidebar.05 §5
+team add sidebar.06
+team join sidebar.06 §6
+team add sidebar.07
+team join sidebar.07 §7
+team add sidebar.08
+team join sidebar.08 §8
+team add sidebar.09
+team join sidebar.09 §9
+
+team add spec
+team modify spec color dark_gray
+team modify spec prefix {"text":"旁觀 ", "color":"dark_gray"}
+team modify spec friendlyFire false
+team modify spec nametagVisibility never
+
+team add ffa
+team modify ffa color gray
+team modify ffa prefix {"text":"玩家 ", "color":"gray"}
+team modify ffa friendlyFire true
+team modify ffa nametagVisibility never
+
+function duhc:api/team/refresh
+
+# Lobby
+execute align xyz positioned ~0.5 200 ~0.5 run function duhc:game/lobby/generate
+
+# effect
+function duhc:chat/system/format {target:"@a",msg:"DUHC 安裝成功!"}
+
+effect give @a blindness 3 0 true
+title @a subtitle {"text": "By DragonL","color": "#B8B3FF"}
+title @a title {"text": "DUHC Core","color":"#FFE5AD"}
+execute as @a at @s run playsound entity.player.levelup master @s ~ ~ ~ 1 1 1
