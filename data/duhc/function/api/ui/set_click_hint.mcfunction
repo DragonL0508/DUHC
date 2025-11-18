@@ -7,7 +7,7 @@
 #--------------------------------------------------
 
 $data modify storage duhc:main data.temp.click set value "$(click)"
-execute if data storage duhc:main {data:{temp:{click:"function none"}}} run return 0
+execute if data storage duhc:main {data:{temp:{click:""}}} run return 0
 
 $item modify entity @s inventory.$(slot) duhc:lore/blank
 $item modify entity @s inventory.$(slot) duhc:lore/left_click

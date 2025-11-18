@@ -23,6 +23,8 @@ scoreboard objectives add player.team dummy
 scoreboard objectives add player.ui.refresh dummy
 scoreboard objectives add player.duhc dummy
 scoreboard objectives add player.ui.page dummy
+scoreboard objectives add settings.value.min dummy
+scoreboard objectives add settings.value.max dummy
 
 scoreboard objectives setdisplay sidebar sidebar
 scoreboard objectives modify sidebar numberformat blank
@@ -34,9 +36,16 @@ scoreboard players set state system 0
 # default settings
 scoreboard players set team_select settings 1
 scoreboard players set team_count settings 8
+scoreboard players set night_vision settings 1
+scoreboard players set advancements settings 1
+scoreboard players set health_display settings 1
+
+scoreboard players set team_count settings.value.min 1
+scoreboard players set team_count settings.value.max 8
 
 # Gamerule
 weather clear
+time set midnight
 gamerule doWeatherCycle false
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
@@ -45,6 +54,7 @@ gamerule fallDamage false
 gamerule locatorBar false
 gamerule doInsomnia false
 gamerule pvp false
+gamerule doDaylightCycle false
 
 # Team
 team add sidebar.00

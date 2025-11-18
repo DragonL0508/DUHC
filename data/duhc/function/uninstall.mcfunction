@@ -23,6 +23,8 @@ scoreboard objectives remove player.team
 scoreboard objectives remove player.ui.refresh
 scoreboard objectives remove player.duhc
 scoreboard objectives remove player.ui.page
+scoreboard objectives remove settings.value.max
+scoreboard objectives remove settings.value.min
 kill @e[tag=duhc.lobby]
 kill @e[tag=duhc.lobby.display_entity]
 kill @e[tag=duhc.lobby.interaction]
