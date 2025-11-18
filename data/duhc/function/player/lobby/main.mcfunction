@@ -18,6 +18,10 @@ execute if score @s player.lobby_move matches 400.. run function duhc:player/lob
 # action bar
 function duhc:player/lobby/actionbar
 
+# world border
+execute store result storage duhc:main data.temp.border int 1 run scoreboard players get border_size settings
+function duhc:player/lobby/border with storage duhc:main data.temp
+
 # ui
 function duhc:player/lobby/ui/main
 

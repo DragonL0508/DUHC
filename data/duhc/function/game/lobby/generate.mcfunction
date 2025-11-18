@@ -28,3 +28,4 @@ tp @a ~ ~0.5 ~
 # Misc
 setworldspawn ~ ~ ~
 spawnpoint @a ~ ~ ~
+worldborder center ~ ~

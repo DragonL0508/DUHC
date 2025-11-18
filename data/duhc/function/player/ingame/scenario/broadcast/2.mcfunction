@@ -1,10 +1,8 @@
 #--------------------------------------------------
 #DUHC
-#data\duhc\function\player\ingame\main.mcfunction
+#data\duhc\function\player\ingame\scenario\broadcast\2.mcfunction
 #
-#Created on 2025-11-18
+#Created on 2025-11-19
 #By DragonL
 #--------------------------------------------------
 
-# scenario
-function duhc:player/ingame/scenario/main

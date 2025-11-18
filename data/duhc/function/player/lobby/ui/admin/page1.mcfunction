@@ -8,7 +8,7 @@
 
 # normal button
 function duhc:api/ui/create_button {id:"leave_admin", slot:0, title:"§f退出管理員模式", desc:[], icon:"structure_void", click:"function duhc:admin", type:"normal"}
-function duhc:api/ui/create_button {id:"next_page", slot:26, title:"§f下一頁", desc:[], icon:"paper", click:"function duhc:player/lobby/ui/admin/click/next_page", type:"normal"}
+function duhc:api/ui/create_button {id:"next_page", slot:26, title:"§f下一頁", desc:[], icon:"arrow", click:"function duhc:player/lobby/ui/admin/click/next_page", type:"normal"}
 
 function duhc:api/ui/create_button {id:"blank_1", slot:8, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_2", slot:9, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
@@ -33,11 +33,11 @@ function duhc:api/ui/create_button {id:"blood_diamond", slot:5, title:"§e鮮血
 
 function duhc:api/ui/create_button {id:"blood_enchant", slot:6, title:"§e鮮血附魔:", desc:["§6附魔§7時會§c消耗§7半顆心。"], icon:"enchanting_table", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"diamondless", slot:7, title:"§e無鑽石:", desc:["§7無法挖掘§6鑽石§7，","§7但玩家死亡後會掉落少量鑽石。"], icon:"diamond", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"diamondless", slot:7, title:"§e無鑽石:", desc:["§7無法拾取§6鑽石§7，","§7但玩家死亡後會掉落少量鑽石。"], icon:"diamond", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"goldless", slot:10, title:"§e無黃金:", desc:["§7無法挖掘§6金礦§7，","§7但玩家死亡後會掉落少量金錠。"], icon:"gold_ingot", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"goldless", slot:10, title:"§e無黃金:", desc:["§7無法拾取§6金礦§7，","§7但玩家死亡後會掉落少量金錠。"], icon:"gold_ingot", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"ironless", slot:11, title:"§e無鐵:", desc:["§7無法挖掘§6鐵礦§7，","§7但玩家死亡後會掉落一些鐵錠。"], icon:"iron_ingot", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"ironless", slot:11, title:"§e無鐵:", desc:["§7無法拾取§6鐵礦§7，","§7但玩家死亡後會掉落一些鐵錠。"], icon:"iron_ingot", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
 function duhc:api/ui/create_button {id:"nofall", slot:12, title:"§e不會摔傷:", desc:["§7玩家不會受到§6摔落傷害§7。"], icon:"leather_boots", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
@@ -51,6 +51,6 @@ function duhc:api/ui/create_button {id:"free_enchant", slot:16, title:"§e附魔
 
 function duhc:api/ui/create_button {id:"broadcast", slot:19, title:"§e挖礦警告:", desc:["§7挖掘§6金礦§7與§6鑽石§7時有§620%§7會公告自身位置。"], icon:"diamond_pickaxe", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"hastey_boy", slot:20, title:"§e快速挖掘:", desc:["§7合成鎬子時會自帶§6效率III§7附魔。"], icon:"golden_pickaxe", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"hastey_boy", slot:20, title:"§e快速挖掘:", desc:["§7手持鎬子時會自帶§6效率III§7附魔。"], icon:"golden_pickaxe", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
 function duhc:api/ui/create_button {id:"night_vision", slot:21, title:"§e玩家夜視:", desc:["§7所有玩家獲得§6夜視§7效果。"], icon:"ender_eye", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}

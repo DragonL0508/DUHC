@@ -17,3 +17,7 @@ function duhc:api/team/join/use
 # reset score
 scoreboard players reset @s player.sprint
 scoreboard players reset @s player.walk
+scoreboard players reset @s player.death
+scoreboard players reset @s player.mined.diamond_ore
+scoreboard players reset @s player.mined.deepslate_diamond_ore
+scoreboard players reset @s player.enchant

@@ -19,6 +19,7 @@ scoreboard players set #toggle temp 0
 
 $execute if data storage duhc:main {data:{temp:{type:"toggle"}}} run function duhc:api/ui/toggle/get_state {id:"$(id)"}
 $execute if data storage duhc:main {data:{temp:{type:"value"}}} store result storage duhc:main data.temp.value int 1 run scoreboard players get $(id) settings
+execute if data storage duhc:main {data:{temp:{value:0}}} run data modify storage duhc:main data.temp.value set value "§c§l永遠"
 
 # title
 $function duhc:api/ui/set_title/use {slot:$(slot), title:"$(title)"}

@@ -23,8 +23,14 @@ scoreboard objectives add player.team dummy
 scoreboard objectives add player.ui.refresh dummy
 scoreboard objectives add player.duhc dummy
 scoreboard objectives add player.ui.page dummy
-scoreboard objectives add settings.value.min dummy
-scoreboard objectives add settings.value.max dummy
+scoreboard objectives add player.death deathCount
+scoreboard objectives add player.kills totalKillCount
+
+scoreboard objectives add player.mined.diamond_ore mined:diamond_ore
+scoreboard objectives add player.mined.deepslate_diamond_ore mined:deepslate_diamond_ore
+scoreboard objectives add player.mined.gold_ore mined:gold_ore
+scoreboard objectives add player.mined.deepslate_gold_ore mined:deepslate_gold_ore
+scoreboard objectives add player.enchant custom:enchant_item
 
 scoreboard objectives setdisplay sidebar sidebar
 scoreboard objectives modify sidebar numberformat blank
@@ -39,9 +45,16 @@ scoreboard players set team_count settings 8
 scoreboard players set night_vision settings 1
 scoreboard players set advancements settings 1
 scoreboard players set health_display settings 1
+scoreboard players set nametag settings 20
+scoreboard players set nether settings 40
+scoreboard players set daylight settings 40
+scoreboard players set peaceful settings 40
 
-scoreboard players set team_count settings.value.min 1
-scoreboard players set team_count settings.value.max 8
+scoreboard players set border_start settings 30
+scoreboard players set border_duration settings 30
+scoreboard players set border_size settings 750
+scoreboard players set player_glow settings 60
+scoreboard players set final_regen settings 20
 
 # Gamerule
 weather clear

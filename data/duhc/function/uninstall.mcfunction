@@ -23,8 +23,13 @@ scoreboard objectives remove player.team
 scoreboard objectives remove player.ui.refresh
 scoreboard objectives remove player.duhc
 scoreboard objectives remove player.ui.page
-scoreboard objectives remove settings.value.max
-scoreboard objectives remove settings.value.min
+scoreboard objectives remove player.death
+scoreboard objectives remove player.kills
+scoreboard objectives remove player.mined.diamond_ore
+scoreboard objectives remove player.mined.deepslate_diamond_ore
+scoreboard objectives remove player.mined.gold_ore
+scoreboard objectives remove player.mined.deepslate_gold_ore
+scoreboard objectives remove player.enchant
 kill @e[tag=duhc.lobby]
 kill @e[tag=duhc.lobby.display_entity]
 kill @e[tag=duhc.lobby.interaction]
@@ -44,6 +49,7 @@ team remove ffa
 team remove spec
 function duhc:api/team/remove_all/use
 data remove storage duhc:main data
+worldborder set 59999968
 
 # effect
 function duhc:chat/system/format {target:"@s",msg:"成功解除安裝 DUHC !"}

@@ -1,0 +1,11 @@
+[
+    {
+        "function": "set_enchantments",
+        "enchantments": {"efficiency": 3},
+        "add": true
+    },
+    {
+        "function": "set_custom_data",
+        "tag": {"duhc.hastey_boy":true}
+    }
+]
