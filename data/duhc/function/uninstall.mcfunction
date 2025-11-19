@@ -7,7 +7,7 @@
 #--------------------------------------------------
 
 # remove lobby
-execute as @e[type=marker, tag=duhc.lobby] at @s run fill ~11 ~7 ~11 ~-11 ~-2 ~-11 minecraft:air
+function duhc:api/remove_lobby
 
 # uninstall
 scoreboard objectives remove system
@@ -25,14 +25,18 @@ scoreboard objectives remove player.duhc
 scoreboard objectives remove player.ui.page
 scoreboard objectives remove player.death
 scoreboard objectives remove player.kills
+scoreboard objectives remove player.notification
 scoreboard objectives remove player.mined.diamond_ore
 scoreboard objectives remove player.mined.deepslate_diamond_ore
 scoreboard objectives remove player.mined.gold_ore
 scoreboard objectives remove player.mined.deepslate_gold_ore
 scoreboard objectives remove player.enchant
+scoreboard objectives remove player.hurt
+scoreboard objectives remove coords
 kill @e[tag=duhc.lobby]
 kill @e[tag=duhc.lobby.display_entity]
 kill @e[tag=duhc.lobby.interaction]
+kill @e[tag=duhc.lobby.waypoint]
 
 team remove sidebar.00
 team remove sidebar.01

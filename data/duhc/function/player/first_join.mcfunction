@@ -12,3 +12,4 @@ gamemode adventure @s
 clear @s
 scoreboard players set @s player.ui.refresh 1
 scoreboard players set @s player.duhc 1
+scoreboard players set @s player.notification 1

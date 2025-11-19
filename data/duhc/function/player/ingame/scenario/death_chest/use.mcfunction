@@ -6,7 +6,6 @@
 #By DragonL
 #--------------------------------------------------
 
-gamerule keepInventory true
 execute unless score @s player.death matches 1.. run return 0
 
 function duhc:player/ingame/scenario/death_chest/get_pos

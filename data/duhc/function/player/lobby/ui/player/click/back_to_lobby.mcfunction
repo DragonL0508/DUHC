@@ -8,4 +8,3 @@
 
 tp @s @n[tag=duhc.lobby]
 execute at @s run playsound entity.illusioner.mirror_move master @s ~ ~ ~ 1 1 1
-function duhc:chat/system/format {target:"@s", msg:"已傳送回大廳!"}

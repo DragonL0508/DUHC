@@ -8,6 +8,9 @@
 
 # Marker
 summon marker ~ ~ ~ {Tags:["duhc.lobby"]}
+execute positioned over world_surface run summon armor_stand ~ ~ ~ {Tags:["duhc.lobby.waypoint"],Invisible:1b,Invulnerable:1b,Marker:1b}
+attribute @n[tag=duhc.lobby.waypoint] waypoint_transmit_range base set 999999
+waypoint modify @n[tag=duhc.lobby.waypoint] color white
 
 summon minecraft:item_display ~ ~1 ~ {item: {count: 1, id: "minecraft:enchanted_golden_apple"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.8f, 0.8f, 0.8f], translation: [0.0f, 0.0f, 0.0f]}, Tags:["duhc.lobby.display_entity","duhc.lobby.apple"], teleport_duration:10}
 summon text_display ~ ~1.5 ~ {text:{text: "(點我查看資訊)", color: "gray"}, billboard:"center", Tags:["duhc.lobby.display_entity"], background:16777215, shadow:1b, transformation:{left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.75f, 0.75f, 0.75f], translation: [0.0f, 0.0f, 0.0f]}}

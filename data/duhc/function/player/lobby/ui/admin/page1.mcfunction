@@ -7,7 +7,7 @@
 #--------------------------------------------------
 
 # normal button
-function duhc:api/ui/create_button {id:"leave_admin", slot:0, title:"§f退出管理員模式", desc:[], icon:"structure_void", click:"function duhc:admin", type:"normal"}
+function duhc:api/ui/create_button {id:"leave_admin", slot:0, title:"§f退出管理員模式", desc:[], icon:"barrier", click:"function duhc:admin", type:"normal"}
 function duhc:api/ui/create_button {id:"next_page", slot:26, title:"§f下一頁", desc:[], icon:"arrow", click:"function duhc:player/lobby/ui/admin/click/next_page", type:"normal"}
 
 function duhc:api/ui/create_button {id:"blank_1", slot:8, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
@@ -21,7 +21,7 @@ function duhc:api/ui/create_button {id:"air", slot:24, title:"", desc:[], icon:"
 function duhc:api/ui/create_button {id:"air", slot:25, title:"", desc:[], icon:"air", click:"", type:"normal"}
 
 # toggle button
-function duhc:api/ui/create_button {id:"more_crafting", slot:1, title:"§e特殊合成:", desc:["§7可以合成出一些特殊物品","§7也有更多合成配方"], icon:"crafting_table", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"more_crafting", slot:1, title:"§e特殊合成:", desc:["§4這個功能還沒完成","§4請催促作者更新"], icon:"crafting_table", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
 function duhc:api/ui/create_button {id:"cut_clean", slot:2, title:"§e物品免燒:", desc:["§7所有§6礦物§7、§6食物§7與§6沙子§7都會自動燒製。"], icon:"coal", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
@@ -43,7 +43,7 @@ function duhc:api/ui/create_button {id:"nofall", slot:12, title:"§e不會摔傷
 
 function duhc:api/ui/create_button {id:"fireless", slot:13, title:"§e不會燒傷:", desc:["§7玩家不會受到§6火焰傷害§7。"], icon:"blaze_powder", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"lucky_leaves", slot:14, title:"§e幸運樹葉:", desc:["§7樹葉掉落的§6蘋果§7有§65%§7的機率會變成§6金蘋果§7。"], icon:"oak_leaves", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"lucky_leaves", slot:14, title:"§e幸運樹葉:", desc:["§7樹葉有§60.5%§7的機率會掉落§6金蘋果§7。"], icon:"oak_leaves", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
 function duhc:api/ui/create_button {id:"more_exp", slot:15, title:"§e經驗翻倍:", desc:["§7經驗值獲取量變為§6兩倍§7。"], icon:"experience_bottle", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 

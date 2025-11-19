@@ -15,7 +15,7 @@ scoreboard objectives add temp dummy
 scoreboard objectives add sidebar dummy
 scoreboard objectives add tick dummy
 scoreboard objectives add settings dummy
-scoreboard objectives add player.health health
+scoreboard objectives add player.health health {"text":"❤",color:red}
 scoreboard objectives add player.walk custom:walk_one_cm
 scoreboard objectives add player.sprint custom:sprint_one_cm
 scoreboard objectives add player.lobby_move dummy
@@ -25,6 +25,9 @@ scoreboard objectives add player.duhc dummy
 scoreboard objectives add player.ui.page dummy
 scoreboard objectives add player.death deathCount
 scoreboard objectives add player.kills totalKillCount
+scoreboard objectives add player.notification dummy
+scoreboard objectives add player.hurt custom:damage_taken
+scoreboard objectives add coords trigger
 
 scoreboard objectives add player.mined.diamond_ore mined:diamond_ore
 scoreboard objectives add player.mined.deepslate_diamond_ore mined:deepslate_diamond_ore
@@ -45,16 +48,19 @@ scoreboard players set team_count settings 8
 scoreboard players set night_vision settings 1
 scoreboard players set advancements settings 1
 scoreboard players set health_display settings 1
-scoreboard players set nametag settings 20
-scoreboard players set nether settings 40
-scoreboard players set daylight settings 40
-scoreboard players set peaceful settings 40
 
-scoreboard players set border_start settings 30
-scoreboard players set border_duration settings 30
+scoreboard players set pvp_time settings 20
+scoreboard players set nametag_time settings 20
+scoreboard players set nether_time settings 40
+scoreboard players set daylight_time settings 40
+scoreboard players set peaceful_time settings 40
+scoreboard players set player_glow_time settings 50
+scoreboard players set final_regen_time settings 20
+scoreboard players set border_start_time settings 30
+scoreboard players set border_duration settings 20
 scoreboard players set border_size settings 750
-scoreboard players set player_glow settings 60
-scoreboard players set final_regen settings 20
+scoreboard players set deathmatch_time settings 60
+scoreboard players set apple_drop_chance settings 5
 
 # Gamerule
 weather clear
@@ -64,7 +70,6 @@ gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
 gamerule spawnRadius 0
 gamerule fallDamage false
-gamerule locatorBar false
 gamerule doInsomnia false
 gamerule pvp false
 gamerule doDaylightCycle false

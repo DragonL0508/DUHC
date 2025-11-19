@@ -1,9 +1,9 @@
 #--------------------------------------------------
 #DUHC
-#data\duhc\function\player\ingame\scenario\fireless\use.mcfunction
+#data\duhc\function\api\team\friendly_fire\3.mcfunction
 #
 #Created on 2025-11-19
 #By DragonL
 #--------------------------------------------------
 
-gamerule fireDamage false
+$team modify $(name) friendlyFire $(bool)

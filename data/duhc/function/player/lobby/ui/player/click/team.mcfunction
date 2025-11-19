@@ -7,7 +7,4 @@
 #--------------------------------------------------
 
 scoreboard players add @s player.team 1
-
 playsound entity.turtle.egg_crack master @s ~ ~ ~ 1 1.5 0.5
-
-function duhc:chat/system/format {target:"@s", msg:"已變更隊伍!"}

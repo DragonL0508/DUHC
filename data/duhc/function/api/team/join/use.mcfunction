@@ -6,6 +6,7 @@
 #By DragonL
 #--------------------------------------------------
 
+execute if score team_count settings matches 1 run scoreboard players set @s player.team 0
 execute if score @s player.team > team_count settings run scoreboard players set @s player.team 0
 
 scoreboard players add @s player.team 0

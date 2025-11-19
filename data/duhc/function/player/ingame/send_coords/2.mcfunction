@@ -1,9 +1,9 @@
 #--------------------------------------------------
 #DUHC
-#data\duhc\function\player\ingame\scenario\night_vision\use.mcfunction
+#data\duhc\function\player\ingame\send_coords\2.mcfunction
 #
 #Created on 2025-11-19
 #By DragonL
 #--------------------------------------------------
 
-effect give @s night_vision infinite 0 true
+$teammsg §fX=§6$(x) §fY=§6$(y) §fZ=§6$(z)

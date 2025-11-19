@@ -13,8 +13,7 @@ execute store result score #player_count system if entity @a[team=!spec]
 execute store result score #spec_count system if entity @a[team=spec]
 
 # main tick
-execute if score state system matches 0 run function duhc:game/lobby/main
-execute if score state system matches 1 run function duhc:game/ingame/main
+function duhc:game/main
 
 # entity tick
 execute as @a at @s run function duhc:player/main

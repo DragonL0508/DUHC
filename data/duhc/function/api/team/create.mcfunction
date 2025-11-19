@@ -14,5 +14,6 @@ $team modify $(name) friendlyFire false
 $team modify $(name) nametagVisibility hideForOtherTeams
 $team modify $(name) seeFriendlyInvisibles true
 $team modify $(name) prefix {"text":"$(prefix) ", color:"$(color)"}
+$team modify $(name) collisionRule never
 
 $execute unless data storage duhc:main {data:{team:["$(name)"]}} run data modify storage duhc:main data.team append value "$(name)"
