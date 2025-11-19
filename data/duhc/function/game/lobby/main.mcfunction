@@ -13,3 +13,8 @@ execute as @e[type=interaction, tag=duhc.lobby.info] on target run function duhc
 
 # sidebar
 function duhc:game/lobby/sidebar
+
+# health display
+scoreboard objectives setdisplay list
+scoreboard objectives setdisplay below_name
+execute if score health_display settings matches 1 run function duhc:game/lobby/health_display

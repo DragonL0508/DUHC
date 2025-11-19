@@ -32,3 +32,4 @@ tp @a ~ ~0.5 ~
 setworldspawn ~ ~ ~
 spawnpoint @a ~ ~ ~
 worldborder center ~ ~
+forceload add ~11 ~11 ~-11 ~-11

@@ -9,7 +9,7 @@
 execute unless score @s player.duhc matches -2147483648..2147483647 run function duhc:player/first_join
 
 execute if score state system matches 0 run function duhc:player/lobby/main
-execute if score state system matches 1 run function duhc:player/ingame/main
+execute if score state system matches 2 run function duhc:player/ingame/main
 
 # always active ->
 function duhc:api/team/join/use

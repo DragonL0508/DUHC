@@ -31,3 +31,4 @@ execute if entity @s[tag=duhc.admin] if score @s player.duhc matches 2 run funct
 
 # potion effect
 effect give @s saturation infinite 100 true
+effect give @s instant_health 1 100 true

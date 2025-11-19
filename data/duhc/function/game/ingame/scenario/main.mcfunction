@@ -56,3 +56,6 @@ execute if score double_ores settings matches 1 run function duhc:game/ingame/sc
 
 # 2x EXP
 execute if score more_exp settings matches 1 run function duhc:game/ingame/scenario/more_exp/use
+
+# timber
+execute as @e[predicate=duhc:item/log] at @s run function duhc:game/ingame/scenario/timber/use

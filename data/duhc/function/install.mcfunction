@@ -28,6 +28,7 @@ scoreboard objectives add player.kills totalKillCount
 scoreboard objectives add player.notification dummy
 scoreboard objectives add player.hurt custom:damage_taken
 scoreboard objectives add coords trigger
+scoreboard objectives add team.left dummy
 
 scoreboard objectives add player.mined.diamond_ore mined:diamond_ore
 scoreboard objectives add player.mined.deepslate_diamond_ore mined:deepslate_diamond_ore
@@ -44,7 +45,7 @@ scoreboard players set state system 0
 
 # default settings
 scoreboard players set team_select settings 1
-scoreboard players set team_count settings 8
+scoreboard players set team_count settings 2
 scoreboard players set night_vision settings 1
 scoreboard players set advancements settings 1
 scoreboard players set health_display settings 1
@@ -52,7 +53,6 @@ scoreboard players set health_display settings 1
 scoreboard players set pvp_time settings 20
 scoreboard players set nametag_time settings 20
 scoreboard players set nether_time settings 40
-scoreboard players set daylight_time settings 40
 scoreboard players set peaceful_time settings 40
 scoreboard players set player_glow_time settings 50
 scoreboard players set final_regen_time settings 20
@@ -62,7 +62,10 @@ scoreboard players set border_size settings 750
 scoreboard players set deathmatch_time settings 60
 scoreboard players set apple_drop_chance settings 5
 
+scoreboard players set #60 temp 60
+
 # Gamerule
+difficulty peaceful
 weather clear
 time set midnight
 gamerule doWeatherCycle false
@@ -73,6 +76,7 @@ gamerule fallDamage false
 gamerule doInsomnia false
 gamerule pvp false
 gamerule doDaylightCycle false
+gamerule doLimitedCrafting true
 
 # Team
 team add sidebar.00
@@ -107,6 +111,7 @@ team modify ffa color gray
 team modify ffa prefix {"text":"玩家 ", "color":"gray"}
 team modify ffa friendlyFire true
 team modify ffa nametagVisibility never
+team modify ffa seeFriendlyInvisibles false
 
 function duhc:api/team/refresh
 

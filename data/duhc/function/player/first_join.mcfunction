@@ -7,9 +7,16 @@
 #--------------------------------------------------
 
 recipe give @s *
+recipe take @s duhc:golden_head
 gamemode adventure @s
 
 clear @s
 scoreboard players set @s player.ui.refresh 1
 scoreboard players set @s player.duhc 1
 scoreboard players set @s player.notification 1
+
+# in game
+execute unless score state system matches 1.. run return 0
+
+scoreboard players set @s player.team -1
+gamemode spectator @s

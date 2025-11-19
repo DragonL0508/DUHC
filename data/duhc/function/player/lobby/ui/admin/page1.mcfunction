@@ -15,13 +15,12 @@ function duhc:api/ui/create_button {id:"blank_2", slot:9, title:"", desc:[], ico
 function duhc:api/ui/create_button {id:"blank_3", slot:17, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_4", slot:18, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 
-function duhc:api/ui/create_button {id:"air", slot:22, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:23, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:24, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:25, title:"", desc:[], icon:"air", click:"", type:"normal"}
 
 # toggle button
-function duhc:api/ui/create_button {id:"more_crafting", slot:1, title:"§e特殊合成:", desc:["§4這個功能還沒完成","§4請催促作者更新"], icon:"crafting_table", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"more_crafting", slot:1, title:"§e特殊合成:", desc:["§4這個功能現在只能合成 §6金頭顱","§4請催促作者更新"], icon:"crafting_table", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
 function duhc:api/ui/create_button {id:"cut_clean", slot:2, title:"§e物品免燒:", desc:["§7所有§6礦物§7、§6食物§7與§6沙子§7都會自動燒製。"], icon:"coal", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
@@ -53,4 +52,6 @@ function duhc:api/ui/create_button {id:"broadcast", slot:19, title:"§e挖礦警
 
 function duhc:api/ui/create_button {id:"hastey_boy", slot:20, title:"§e快速挖掘:", desc:["§7手持鎬子時會自帶§6效率III§7附魔。"], icon:"golden_pickaxe", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"night_vision", slot:21, title:"§e玩家夜視:", desc:["§7所有玩家獲得§6夜視§7效果。"], icon:"ender_eye", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"timber", slot:21, title:"§e伐木工:", desc:["§7玩家能一次砍倒整棵樹木。"], icon:"iron_axe", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+
+function duhc:api/ui/create_button {id:"night_vision", slot:22, title:"§e玩家夜視:", desc:["§7所有玩家獲得§6夜視§7效果。"], icon:"ender_eye", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}

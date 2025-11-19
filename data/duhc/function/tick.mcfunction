@@ -11,6 +11,7 @@ execute unless score #install system matches 1 run return 0
 # get game stats
 execute store result score #player_count system if entity @a[team=!spec]
 execute store result score #spec_count system if entity @a[team=spec]
+execute store result score #alive_player_count system if entity @a[gamemode=survival]
 
 # main tick
 function duhc:game/main

@@ -1,0 +1,53 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"ggg",
+		"ghg",
+		"ggg"
+	],
+	"key": {
+		"g": [
+			"minecraft:gold_ingot"
+		],
+		"h": [
+			"minecraft:player_head"
+		]
+	},
+	"result": {
+		"id": "minecraft:player_head",
+		"components": {
+			"minecraft:profile": {
+				"properties": [
+					{
+						"name": "textures",
+						"value": "e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU1YjMwOGExZWI1Y2FhOTdlNWZiMjU3YjJkOWUxODYxZmRlZjE1MTYxZDUwYTFmNDZmMjIzMTVmNDkyOSJ9fX0="
+					}
+				]
+			},
+			"minecraft:item_name": "§6Golden Head §c4❤",
+			"minecraft:consumable": {
+				"consume_seconds": 0.5,
+				"on_consume_effects": [
+					{
+						"type": "minecraft:apply_effects",
+						"effects": [
+							{
+								"id": "minecraft:absorption",
+								"amplifier": 0,
+								"duration": 2400
+							},
+							{
+								"id": "minecraft:regeneration",
+								"amplifier": 1,
+								"duration": 200
+							}
+						]
+					}
+				]
+			}
+		},
+		"count": 1
+	},
+	"show_notification": true
+}
