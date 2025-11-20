@@ -36,6 +36,12 @@ scoreboard objectives remove player.hurt
 scoreboard objectives remove coords
 scoreboard objectives remove team.left
 scoreboard objectives remove admin.last_page
+scoreboard objectives remove stats.kill_count
+scoreboard objectives remove stats.damage_taken
+scoreboard objectives remove stats.golden_apple
+scoreboard objectives remove stats.diamond
+scoreboard objectives remove stats.deepslate_diamond
+scoreboard objectives remove stats.temp
 kill @e[tag=duhc.lobby]
 kill @e[tag=duhc.lobby.display_entity]
 kill @e[tag=duhc.lobby.interaction]
@@ -75,6 +81,13 @@ schedule clear duhc:game/start/2
 schedule clear duhc:game/start/countdown
 schedule clear duhc:game/ingame/event/no_nether
 schedule clear duhc:game/ingame/event/deathmatch/countdown
+
+schedule clear duhc:game/end/message/kill_count
+schedule clear duhc:game/end/message/damage_taken
+schedule clear duhc:game/end/message/golden_apple
+schedule clear duhc:game/end/message/diamond
+schedule clear duhc:game/end/message/gold
+schedule clear duhc:game/end/message/thanks_for_playing
 
 # effect
 function duhc:chat/system/format {target:"@s",msg:"成功解除安裝 DUHC !"}

@@ -29,6 +29,9 @@ function duhc:player/lobby/ui/main
 execute if entity @s[tag=duhc.admin] unless score @s player.duhc matches 2 run function duhc:player/admin/join
 execute if entity @s[tag=duhc.admin] if score @s player.duhc matches 2 run function duhc:player/admin/leave
 
+# spec
+execute if entity @s[team=spec] unless block ~ ~1 ~ #duhc:transparent at @n[tag=duhc.lobby] run tp @s ~ ~20 ~
+
 # potion effect
 effect give @s saturation infinite 100 true
 effect give @s instant_health 1 100 true

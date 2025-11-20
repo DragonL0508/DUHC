@@ -8,11 +8,11 @@
 
 function duhc:api/ui/create_button {id:"leave_admin", slot:0, title:"§f退出管理員模式", desc:[], icon:"barrier", click:"function uhc:admin", type:"normal"}
 function duhc:api/ui/create_button {id:"previous_page", slot:18, title:"§f上一頁", desc:[], icon:"arrow", click:"function duhc:player/lobby/ui/admin/click/previous_page", type:"normal"}
+function duhc:api/ui/create_button {id:"next_page", slot:26, title:"§f下一頁", desc:[], icon:"arrow", click:"function duhc:player/lobby/ui/admin/click/next_page", type:"normal"}
 
 function duhc:api/ui/create_button {id:"blank_1", slot:8, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_2", slot:9, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_3", slot:17, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
-function duhc:api/ui/create_button {id:"blank_4", slot:26, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 
 data modify storage duhc:main data.temp.range set value {min:0, max:180, n:5}
 function duhc:api/ui/create_button {id:"pvp_time", slot:1, title:"§e玩家傷害(分鐘):", desc:["§7在指定時間後玩家才能互相傷害。"], icon:"iron_sword", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}

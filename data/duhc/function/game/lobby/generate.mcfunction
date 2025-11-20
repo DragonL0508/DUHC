@@ -24,8 +24,6 @@ summon minecraft:text_display ~11 ~3 ~0 {Rotation: [90.0f, 0.0f], alignment: "ce
 summon minecraft:text_display ~ ~3 ~11 {Rotation: [180.0f, 0.0f], alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: "跳離平台以成為觀戰玩家", text_opacity: 255, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 2.0f, 2.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["duhc.lobby.display_entity"]}
 summon minecraft:text_display ~ ~3 ~-11 {Rotation: [0.0f, 0.0f], alignment: "center", background: 0, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: "跳離平台以成為觀戰玩家", text_opacity: 255, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [2.0f, 2.0f, 2.0f], translation: [0.0f, 0.0f, 0.0f]},Tags:["duhc.lobby.display_entity"]}
 
-
-summon text_display ~ ~ ~ {background:-788529153}
 # Blocks
 fill ~11 ~7 ~11 ~-11 ~7 ~-11 smooth_quartz
 fill ~10 ~7 ~10 ~-10 ~7 ~-10 light[level=15]

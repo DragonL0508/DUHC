@@ -36,6 +36,15 @@ scoreboard objectives add player.mined.gold_ore mined:gold_ore
 scoreboard objectives add player.mined.deepslate_gold_ore mined:deepslate_gold_ore
 scoreboard objectives add player.enchant custom:enchant_item
 
+scoreboard objectives add stats.kill_count playerKillCount
+scoreboard objectives add stats.damage_taken custom:damage_taken
+scoreboard objectives add stats.golden_apple used:golden_apple
+scoreboard objectives add stats.diamond mined:diamond_ore
+scoreboard objectives add stats.deepslate_diamond mined:deepslate_diamond_ore
+scoreboard objectives add stats.gold mined:gold_ore
+scoreboard objectives add stats.deepslate_gold mined:deepslate_gold_ore
+scoreboard objectives add stats.temp dummy
+
 scoreboard objectives setdisplay sidebar sidebar
 function duhc:api/sidebar/set_line/use {line:5}
 scoreboard objectives modify sidebar numberformat blank

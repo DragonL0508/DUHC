@@ -7,10 +7,11 @@
 #--------------------------------------------------
 
 scoreboard players set state system 3
-tellraw @a [{text:"winner: "},{selector:"@a[gamemode=survival]"}]
 
 title @a reset
 title @a subtitle {"text":"勝負已定",color:"green"}
 title @a title {text:"遊戲結束", color:"#FFE5AD", bold:true}
 execute as @a at @s run playsound entity.player.levelup master @s ~ ~ ~ 1 1 1
 scoreboard objectives setdisplay sidebar
+
+function duhc:game/end/message/winner
