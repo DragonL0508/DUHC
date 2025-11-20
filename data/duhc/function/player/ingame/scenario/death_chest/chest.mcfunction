@@ -49,13 +49,13 @@ item replace block ~-1 ~ ~ container.6 from entity @s inventory.24
 item replace block ~-1 ~ ~ container.7 from entity @s inventory.25
 item replace block ~-1 ~ ~ container.8 from entity @s inventory.26
 
-loot replace block ~-1 ~ ~ container.18 loot duhc:player_head
+#loot replace block ~-1 ~ ~ container.18 loot duhc:player_head
 
-item replace block ~-1 ~ ~ container.19 from entity @s armor.head
-item replace block ~-1 ~ ~ container.20 from entity @s armor.chest
-item replace block ~-1 ~ ~ container.21 from entity @s armor.legs
-item replace block ~-1 ~ ~ container.22 from entity @s armor.feet
-item replace block ~-1 ~ ~ container.23 from entity @s weapon.offhand
+item replace block ~-1 ~ ~ container.18 from entity @s armor.head
+item replace block ~-1 ~ ~ container.19 from entity @s armor.chest
+item replace block ~-1 ~ ~ container.20 from entity @s armor.legs
+item replace block ~-1 ~ ~ container.21 from entity @s armor.feet
+item replace block ~-1 ~ ~ container.22 from entity @s weapon.offhand
 
 clear @s
 
