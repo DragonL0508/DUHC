@@ -9,5 +9,5 @@
 playsound item.book.page_turn master @s ~ ~ ~ 1 1 1
 kill @n[type=item_display, tag=duhc.settings.value]
 
-scoreboard players set @s player.ui.page 2
+scoreboard players operation @s player.ui.page = @s admin.last_page
 scoreboard players set @s player.ui.refresh 1

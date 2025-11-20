@@ -6,8 +6,6 @@
 #By DragonL
 #--------------------------------------------------
 
-function duhc:api/sidebar/set_line/use {line:5}
-
 team modify sidebar.00 prefix ""
 team modify sidebar.00 suffix ""
 

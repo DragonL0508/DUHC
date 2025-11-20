@@ -1,17 +1,17 @@
 #--------------------------------------------------
 #DUHC
-#data\duhc\function\uninstall.mcfunction
+#data\uhc\function\uninstall.mcfunction
 #
-#Created on 2025-11-18
+#Created on 2025-11-20
 #By DragonL
 #--------------------------------------------------
 
 # remove lobby
-function duhc:api/remove_lobby
+function duhc:game/lobby/remove
 execute as @e[type=marker, tag=duhc.lobby] at @s run forceload remove ~11 ~11 ~-11 ~-11
 
 # uninstall
-scoreboard objectives remove system
+scoreboard players reset * system
 scoreboard objectives remove temp
 scoreboard objectives remove sidebar
 scoreboard objectives remove tick
@@ -35,6 +35,7 @@ scoreboard objectives remove player.enchant
 scoreboard objectives remove player.hurt
 scoreboard objectives remove coords
 scoreboard objectives remove team.left
+scoreboard objectives remove admin.last_page
 kill @e[tag=duhc.lobby]
 kill @e[tag=duhc.lobby.display_entity]
 kill @e[tag=duhc.lobby.interaction]

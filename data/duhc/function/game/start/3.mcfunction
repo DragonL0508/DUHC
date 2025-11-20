@@ -8,7 +8,9 @@
 
 execute as @a[team=!spec] run function duhc:game/start/effect/clear
 scoreboard players set state system 2
+
 scoreboard objectives setdisplay sidebar sidebar
+function duhc:api/sidebar/set_line/use {line:8}
 
 title @a actionbar ""
 execute as @a at @s run playsound entity.ender_dragon.ambient master @s ~ ~ ~ .5 1

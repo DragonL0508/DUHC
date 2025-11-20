@@ -7,6 +7,7 @@
 #--------------------------------------------------
 
 effect clear @s
+clear @s
 gamemode survival @s
 attribute @s movement_speed base reset
 attribute @s jump_strength base reset

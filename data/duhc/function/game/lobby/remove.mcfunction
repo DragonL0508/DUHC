@@ -1,8 +1,8 @@
 #--------------------------------------------------
 #DUHC
-#data\duhc\function\api\remove_lobby.mcfunction
+#data\duhc\function\game\lobby\remove.mcfunction
 #
-#Created on 2025-11-19
+#Created on 2025-11-20
 #By DragonL
 #--------------------------------------------------
 

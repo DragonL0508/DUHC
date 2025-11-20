@@ -1,10 +1,9 @@
 #--------------------------------------------------
 #DUHC
-#data\duhc\function\admin.mcfunction
+#data\duhc\function\load.mcfunction
 #
-#Created on 2025-11-18
+#Created on 2025-11-20
 #By DragonL
 #--------------------------------------------------
 
-tag @s add duhc.admin
-scoreboard players reset @s player.ui.page
+scoreboard objectives add system dummy

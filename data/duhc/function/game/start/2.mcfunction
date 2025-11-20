@@ -8,7 +8,7 @@
 
 # settings
 
-function duhc:api/remove_lobby
+function duhc:game/lobby/remove
 
 time set 0
 gamerule doDaylightCycle true

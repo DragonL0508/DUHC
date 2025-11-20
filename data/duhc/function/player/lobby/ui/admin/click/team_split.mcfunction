@@ -8,3 +8,4 @@
 
 function duhc:chat/system/format {target:"@a", msg:"系統已隨機分隊!"}
 function duhc:api/team/split/use
+execute as @a at @s run playsound item.brush.brushing.gravel.complete master @s ~ ~ ~ 1 1 1

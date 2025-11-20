@@ -1,8 +1,8 @@
 #--------------------------------------------------
 #DUHC
-#data\duhc\function\install.mcfunction
+#data\uhc\function\install.mcfunction
 #
-#Created on 2025-11-18
+#Created on 2025-11-20
 #By DragonL
 #--------------------------------------------------
 
@@ -10,7 +10,6 @@
 execute if score #install system matches 1 run return run function duhc:chat/system/format {target:"@s",msg:"你已經安裝DUHC了，如果要重新安裝，請先使用 §e/function duhc:uninstall §f解除安裝"}
 
 # Scorebaord
-scoreboard objectives add system dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add sidebar dummy
 scoreboard objectives add tick dummy
@@ -29,6 +28,7 @@ scoreboard objectives add player.notification dummy
 scoreboard objectives add player.hurt custom:damage_taken
 scoreboard objectives add coords trigger
 scoreboard objectives add team.left dummy
+scoreboard objectives add admin.last_page dummy
 
 scoreboard objectives add player.mined.diamond_ore mined:diamond_ore
 scoreboard objectives add player.mined.deepslate_diamond_ore mined:deepslate_diamond_ore
@@ -37,6 +37,7 @@ scoreboard objectives add player.mined.deepslate_gold_ore mined:deepslate_gold_o
 scoreboard objectives add player.enchant custom:enchant_item
 
 scoreboard objectives setdisplay sidebar sidebar
+function duhc:api/sidebar/set_line/use {line:5}
 scoreboard objectives modify sidebar numberformat blank
 scoreboard objectives modify sidebar displayname [{"color":"#FFE5AD","text":"D",bold:true},{"color":"#FFE3A2","text":"U",bold:true},{"color":"#FFE298","text":"H",bold:true},{"color":"#FFE08D","text":"C ",bold:true},{"color":"#FFDF82","text":"C",bold:true},{"color":"#FFDD77","text":"o",bold:true},{"color":"#FFDB6D","text":"r",bold:true},{"color":"#FFD857","text":"e",bold:true}]
 
