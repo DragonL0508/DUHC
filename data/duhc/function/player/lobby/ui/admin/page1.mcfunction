@@ -15,15 +15,14 @@ function duhc:api/ui/create_button {id:"blank_1", slot:8, title:"", desc:[], ico
 function duhc:api/ui/create_button {id:"blank_2", slot:9, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_3", slot:17, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 
-function duhc:api/ui/create_button {id:"air", slot:24, title:"", desc:[], icon:"air", click:"", type:"normal"}
-function duhc:api/ui/create_button {id:"air", slot:25, title:"", desc:[], icon:"air", click:"", type:"normal"}
-
 # toggle button
-function duhc:api/ui/create_button {id:"more_crafting", slot:1, title:"§e特殊合成:", desc:["§4這個功能現在只能合成 §6金頭顱","§4請催促作者更新"], icon:"crafting_table", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"more_crafting", slot:24, title:"§e特殊合成:", desc:["§4這個功能現在只能合成 §6金頭顱","§4請催促作者更新"], icon:"crafting_table", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"cut_clean", slot:2, title:"§e物品免燒:", desc:["§7所有§6礦物§7、§6食物§7與§6沙子§7都會自動燒製。"], icon:"coal", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"cut_clean", slot:1, title:"§e物品免燒:", desc:["§7所有§6礦物§7、§6食物§7與§6沙子§7都會自動燒製。"], icon:"coal", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"death_chest", slot:3, title:"§e死亡箱子:", desc:["§7死亡後屍體會轉換為死亡箱子。"], icon:"barrel", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+function duhc:api/ui/create_button {id:"death_chest", slot:2, title:"§e死亡箱子:", desc:["§7死亡後屍體會轉換為死亡箱子。"], icon:"barrel", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+
+function duhc:api/ui/create_button {id:"time_bomb", slot:3, title:"§e死亡箱子爆炸:", desc:["§7死亡箱子過30秒會爆炸。"], icon:"tnt", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
 function duhc:api/ui/create_button {id:"double_ores", slot:4, title:"§e雙倍礦物:", desc:["§7所有§6礦物§7數量x2。"], icon:"iron_ore", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
@@ -57,3 +56,5 @@ data modify storage duhc:main data.temp.range set value {min:1, max:1000, n:1}
 function duhc:api/ui/create_button {id:"apple_drop_chance", slot:22, title:"§e蘋果掉落率:", desc:["§7調整蘋果的掉落機率","§7掉落率為 §6數值 x 0.1%"], icon:"apple", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}
 
 function duhc:api/ui/create_button {id:"night_vision", slot:23, title:"§e玩家夜視:", desc:["§7所有玩家獲得§6夜視§7效果。"], icon:"ender_eye", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+
+function duhc:api/ui/create_button {id:"meetup", slot:25, title:"§eUHC Meetup模式:", desc:["§7啟用後遊戲會變成經典的UHC Meetup模式，","§7玩家在一開始就會獲得隨機的裝備。"], icon:"lava_bucket", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}

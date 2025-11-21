@@ -8,7 +8,6 @@
 
 # entity tick
 execute as @e[type=marker, tag=duhc.lobby] at @s run function duhc:game/lobby/particle/border
-execute as @e[type=marker, tag=duhc.lobby] at @s run function duhc:game/lobby/starting_kit_chest/use
 execute as @e[type=interaction, tag=duhc.lobby.info] on attacker run function duhc:game/lobby/info
 execute as @e[type=interaction, tag=duhc.lobby.info] on target run function duhc:game/lobby/info
 

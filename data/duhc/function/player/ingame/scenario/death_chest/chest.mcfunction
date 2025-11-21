@@ -10,6 +10,7 @@ setblock ~ ~ ~ chest[type=right,facing=north]
 setblock ~-1 ~ ~ chest[type=left,facing=north]
 setblock ~-1 ~1 ~ air
 setblock ~ ~1 ~ air
+execute if score time_bomb settings matches 1 align xyz run summon text_display ~ ~1 ~0.5 {Tags:["duhc.time_bomb"], billboard:center}
 
 item replace block ~ ~ ~ container.0 from entity @s hotbar.0
 item replace block ~ ~ ~ container.1 from entity @s hotbar.1

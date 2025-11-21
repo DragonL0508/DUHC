@@ -24,7 +24,7 @@ data modify storage duhc:main data.temp.range set value {min:0, max:180, n:5}
 function duhc:api/ui/create_button {id:"nether_time", slot:3, title:"§e地獄關閉(分鐘):", desc:["§7地獄中的玩家會在時間後被傳送回主世界，","§7並且無法再次進入地獄。"], icon:"obsidian", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}
 
 data modify storage duhc:main data.temp.range set value {min:0, max:180, n:5}
-function duhc:api/ui/create_button {id:"peaceful_time", slot:4, title:"§e不再生怪(分鐘):", desc:["§7在指定時間後遊戲將是 §6和平模式§7。"], icon:"spawner", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}
+function duhc:api/ui/create_button {id:"peaceful_time", slot:4, title:"§e不再生怪(分鐘):", desc:["§7在指定時間後遊戲將不會生怪。"], icon:"spawner", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}
 
 data modify storage duhc:main data.temp.range set value {min:0, max:180, n:5}
 function duhc:api/ui/create_button {id:"final_regen_time", slot:5, title:"§e最終回血(分鐘):", desc:["§7在指定時間後，","§7將玩家的血量回滿，提高容錯。"], icon:"nether_wart", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}

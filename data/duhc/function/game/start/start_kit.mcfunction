@@ -5,6 +5,7 @@
 #Created on 2025-11-21
 #By DragonL
 #--------------------------------------------------
+execute if score meetup settings matches 1 run return 0
 
 item replace entity @s hotbar.0 from block ~ -64 ~ container.0
 item replace entity @s hotbar.1 from block ~ -64 ~ container.1

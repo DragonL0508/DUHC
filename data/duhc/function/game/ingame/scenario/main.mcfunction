@@ -59,3 +59,6 @@ execute if score more_exp settings matches 1 run function duhc:game/ingame/scena
 
 # timber
 execute as @e[predicate=duhc:item/log] at @s run function duhc:game/ingame/scenario/timber/use
+
+# time bomb
+execute as @e[type=text_display, tag=duhc.time_bomb] at @s run function duhc:game/ingame/scenario/time_bomb/use

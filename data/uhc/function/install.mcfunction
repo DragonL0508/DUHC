@@ -76,6 +76,8 @@ scoreboard players set apple_drop_chance settings 5
 scoreboard players set max_item_count settings 160
 
 scoreboard players set #60 temp 60
+scoreboard players set #30 temp 30
+scoreboard players set #20 temp 20
 scoreboard players set #10 temp 10
 
 # Gamerule

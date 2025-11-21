@@ -25,3 +25,6 @@ execute if score free_enchant settings matches 1 run function duhc:game/start/sc
 
 # 特殊合成
 execute if score more_crafting settings matches 1 run function duhc:game/start/scenario/more_crafting
+
+# Meetup模式
+execute if score meetup settings matches 1 run function duhc:game/start/meetup/use

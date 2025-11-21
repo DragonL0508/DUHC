@@ -6,6 +6,6 @@
 #By DragonL
 #--------------------------------------------------
 
-execute in minecraft:overworld run difficulty normal
-execute in minecraft:the_nether run difficulty normal
-execute in minecraft:the_end run difficulty normal
+execute in minecraft:overworld run difficulty easy
+execute in minecraft:the_nether run difficulty easy
+execute in minecraft:the_end run difficulty easy

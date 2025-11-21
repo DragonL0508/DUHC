@@ -15,7 +15,8 @@ function duhc:api/ui/create_button {id:"team_split", slot:10, title:"§e設定�
 
 function duhc:api/ui/create_button {id:"team_split", slot:11, title:"§e設定檔選擇: §a快速", desc:["§7經典的SpeedUHC。"], icon:"writable_book", click:"function preset:speed", type:"normal"}
 
-function duhc:api/ui/create_button {id:"air", slot:12, title:"", desc:[], icon:"red_stained_glass_pane", click:"", type:"normal"}
+function duhc:api/ui/create_button {id:"team_split", slot:12, title:"§e設定檔選擇: §aMeetup", desc:["§7經典的UHC Meetup。"], icon:"writable_book", click:"function preset:meetup", type:"normal"}
+
 function duhc:api/ui/create_button {id:"air", slot:13, title:"", desc:[], icon:"red_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:14, title:"", desc:[], icon:"red_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:15, title:"", desc:[], icon:"red_stained_glass_pane", click:"", type:"normal"}

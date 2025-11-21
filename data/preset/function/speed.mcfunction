@@ -13,6 +13,7 @@ function duhc:chat/system/format {target:"@s", msg:"已載入預設: Speed UHC"}
 scoreboard players set more_crafting settings 1
 scoreboard players set cut_clean settings 1
 scoreboard players set death_chest settings 1
+scoreboard players set time_bomb settings 1
 scoreboard players set double_ores settings 1
 scoreboard players set blood_diamond settings 0
 scoreboard players set blood_enchant settings 0

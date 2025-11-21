@@ -8,7 +8,7 @@
 
 # remove lobby
 function duhc:game/lobby/remove
-execute as @e[type=marker, tag=duhc.lobby] at @s run forceload remove ~11 ~11 ~-11 ~-11
+execute as @e[type=marker, tag=duhc.lobby] at @s run forceload remove ~12 ~12 ~-12 ~-12
 
 # uninstall
 scoreboard players reset * system
