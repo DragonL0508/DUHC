@@ -6,5 +6,5 @@
 #By DragonL
 #--------------------------------------------------
 
-$spreadplayers ~ ~ $(distance) $(distance) true @a[team=!ffa]
-$spreadplayers ~ ~ $(distance) $(distance) false @a[team=ffa]
+$spreadplayers ~ ~ $(distance) $(max_range) true @a[team=!ffa]
+$spreadplayers ~ ~ $(distance) $(max_range) false @a[team=ffa]

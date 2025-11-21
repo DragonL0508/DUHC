@@ -6,4 +6,4 @@
 #By DragonL
 #--------------------------------------------------
 
-$worldborder set 32 $(border_duration)
+$worldborder set 31 $(border_duration)

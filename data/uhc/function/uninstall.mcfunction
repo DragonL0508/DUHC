@@ -16,6 +16,7 @@ scoreboard objectives remove temp
 scoreboard objectives remove sidebar
 scoreboard objectives remove tick
 scoreboard objectives remove settings
+scoreboard objectives remove player.id
 scoreboard objectives remove player.health
 scoreboard objectives remove player.walk
 scoreboard objectives remove player.sprint
@@ -41,6 +42,8 @@ scoreboard objectives remove stats.damage_taken
 scoreboard objectives remove stats.golden_apple
 scoreboard objectives remove stats.diamond
 scoreboard objectives remove stats.deepslate_diamond
+scoreboard objectives remove stats.gold
+scoreboard objectives remove stats.deepslate_gold
 scoreboard objectives remove stats.temp
 kill @e[tag=duhc.lobby]
 kill @e[tag=duhc.lobby.display_entity]
@@ -74,6 +77,7 @@ gamerule doInsomnia true
 gamerule pvp true
 gamerule doDaylightCycle true
 gamerule doLimitedCrafting false
+gamerule spectatorsGenerateChunks true
 
 # 
 schedule clear duhc:game/ingame/scheduler

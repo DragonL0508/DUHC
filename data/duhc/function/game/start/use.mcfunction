@@ -20,3 +20,7 @@ schedule function duhc:game/start/2 3s
 
 # get events
 function duhc:game/ingame/event/get_list/use
+
+# save start kit
+execute at @n[tag=duhc.lobby] run clone ~ ~-1 ~ ~ ~-1 ~ ~ -64 ~
+setblock ~ -63 ~ bedrock

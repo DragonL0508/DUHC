@@ -15,7 +15,6 @@ function duhc:api/ui/create_button {id:"blank_1", slot:8, title:"", desc:[], ico
 function duhc:api/ui/create_button {id:"blank_2", slot:9, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_3", slot:17, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 
-function duhc:api/ui/create_button {id:"air", slot:23, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:24, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:25, title:"", desc:[], icon:"air", click:"", type:"normal"}
 
@@ -54,4 +53,7 @@ function duhc:api/ui/create_button {id:"hastey_boy", slot:20, title:"§e快速�
 
 function duhc:api/ui/create_button {id:"timber", slot:21, title:"§e伐木工:", desc:["§7玩家能一次砍倒整棵樹木。"], icon:"iron_axe", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
-function duhc:api/ui/create_button {id:"night_vision", slot:22, title:"§e玩家夜視:", desc:["§7所有玩家獲得§6夜視§7效果。"], icon:"ender_eye", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+data modify storage duhc:main data.temp.range set value {min:1, max:1000, n:1}
+function duhc:api/ui/create_button {id:"apple_drop_chance", slot:22, title:"§e蘋果掉落率:", desc:["§7調整蘋果的掉落機率","§7掉落率為 §6數值 x 0.1%"], icon:"apple", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}
+
+function duhc:api/ui/create_button {id:"night_vision", slot:23, title:"§e玩家夜視:", desc:["§7所有玩家獲得§6夜視§7效果。"], icon:"ender_eye", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}

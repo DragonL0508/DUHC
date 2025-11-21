@@ -6,7 +6,7 @@
 #By DragonL
 #--------------------------------------------------
 
-function duhc:chat/system/format {target:"@a", msg:"地域關閉 §a觸發"}
+function duhc:chat/system/format {target:"@a", msg:"地獄關閉 §a觸發"}
 execute as @a at @s run playsound entity.firework_rocket.launch master @s ~ ~ ~ .5 1
 
 execute as @a at @s if dimension minecraft:the_nether run tag @s add duhc.in_nether

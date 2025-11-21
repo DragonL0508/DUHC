@@ -6,6 +6,8 @@
 #By DragonL
 #--------------------------------------------------
 
+execute unless score spectate settings matches 1 run return run function duhc:player/lobby/spectate/fail
+
 particle poof ~ ~1 ~ 0.3 0.5 0.3 0.05 20 force @a
 playsound entity.shulker_bullet.hit player @a ~ ~ ~ 0.5 0.9
 function duhc:chat/system/format {target:"@s",msg:"你成為了旁觀者，飛回大廳即可再次加入遊戲!"}

@@ -7,8 +7,8 @@
 #--------------------------------------------------
 
 # 
-execute if entity @s[gamemode=!spectator] at @n[type=marker, tag=duhc.lobby] positioned ~-11.5 ~-2 ~-11.5 unless entity @s[dx=22,dy=9,dz=22,gamemode=!spectator] at @s run function duhc:player/lobby/leave
-execute at @n[type=marker, tag=duhc.lobby] positioned ~-11.5 ~-2 ~-11.5 if entity @s[dx=22,dy=9,dz=22,gamemode=spectator] at @s run function duhc:player/lobby/join
+execute if entity @s[gamemode=!spectator] at @n[type=marker, tag=duhc.lobby] positioned ~-11.5 ~-2 ~-11.5 unless entity @s[dx=22,dy=9,dz=22,gamemode=!spectator] at @s run function duhc:player/lobby/spectate/leave_lobby
+execute at @n[type=marker, tag=duhc.lobby] positioned ~-11.5 ~-2 ~-11.5 if entity @s[dx=22,dy=9,dz=22,gamemode=spectator] at @s run function duhc:player/lobby/spectate/join_lobby
 
 # walk
 scoreboard players operation @s player.lobby_move += @s player.sprint
@@ -29,9 +29,13 @@ function duhc:player/lobby/ui/main
 execute if entity @s[tag=duhc.admin] unless score @s player.duhc matches 2 run function duhc:player/admin/join
 execute if entity @s[tag=duhc.admin] if score @s player.duhc matches 2 run function duhc:player/admin/leave
 
-# spec
+# 禁止旁觀查看地底
 execute if entity @s[team=spec] unless block ~ ~1 ~ #duhc:transparent at @n[tag=duhc.lobby] run tp @s ~ ~20 ~
 
 # potion effect
 effect give @s saturation infinite 100 true
 effect give @s instant_health 1 100 true
+
+# attributes
+execute if entity @s[gamemode=creative] run attribute @s block_interaction_range base reset
+execute if entity @s[gamemode=!creative] run attribute @s block_interaction_range base set 0

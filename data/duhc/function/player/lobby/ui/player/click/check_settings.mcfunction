@@ -39,7 +39,7 @@ tellraw @s " "
 tellraw @s [{text:"蘋果掉落率: ", color:"#FFE5AD"}, {score:{name:"apple_drop_chance", objective:"settings"}, color:white}, {text:" (x0.1%)", color:white}]
 tellraw @s [{text:"玩家傷害: ", color:"#FFE5AD"}, {score:{name:"pvp_time", objective:"settings"}, color:white}, {text:"分鐘", color:white}]
 tellraw @s [{text:"名條顯示: ", color:"#FFE5AD"}, {score:{name:"nametag_time", objective:"settings"}, color:white}, {text:"分鐘", color:white}]
-tellraw @s [{text:"地域關閉: ", color:"#FFE5AD"}, {score:{name:"nether_time", objective:"settings"}, color:white}, {text:"分鐘", color:white}]
+tellraw @s [{text:"地獄關閉: ", color:"#FFE5AD"}, {score:{name:"nether_time", objective:"settings"}, color:white}, {text:"分鐘", color:white}]
 tellraw @s [{text:"不再生怪: ", color:"#FFE5AD"}, {score:{name:"peaceful_time", objective:"settings"}, color:white}, {text:"分鐘", color:white}]
 tellraw @s [{text:"最終回血: ", color:"#FFE5AD"}, {score:{name:"final_regen_time", objective:"settings"}, color:white}, {text:"分鐘", color:white}]
 tellraw @s [{text:"玩家發光: ", color:"#FFE5AD"}, {score:{name:"player_glow_time", objective:"settings"}, color:white}, {text:"分鐘", color:white}]

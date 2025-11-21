@@ -11,6 +11,8 @@
 function duhc:api/ui/create_button {id:"leave_admin", slot:0, title:"§f退出管理員模式", desc:[], icon:"barrier", click:"function uhc:admin", type:"normal"}
 function duhc:api/ui/create_button {id:"next_page", slot:26, title:"§f下一頁", desc:[], icon:"arrow", click:"function duhc:player/lobby/ui/admin/click/next_page", type:"normal"}
 
+function duhc:api/ui/create_button {id:"spectate", slot:10, title:"§e自由成為旁觀者:", desc:["§7玩家是否能跳出大廳成為旁觀者，","§7建議管理員關閉後再分隊。"], icon:"ender_eye", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+
 function duhc:api/ui/create_button {id:"team_select", slot:11, title:"§e自由選隊:", desc:["§7玩家是否能夠自由選擇隊伍。"], icon:"oak_sign", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
 function duhc:api/ui/create_button {id:"team_split", slot:12, title:"§e隨機分隊", desc:["§7隨機將玩家分成不同隊伍，","§7隊伍數量依設定而定。"], icon:"brush", click:"function duhc:player/lobby/ui/admin/click/team_split", type:"normal"}
@@ -20,7 +22,7 @@ function duhc:api/ui/create_button {id:"team_count", slot:13, title:"§e隊伍�
 
 function duhc:api/ui/create_button {id:"notify", slot:14, title:"§e遊戲準備開始", desc:["§7點擊後提示所有玩家遊戲即將開始，","§7管理員可依照聊天室視情況決定是否開始。"], icon:"bell", click:"function duhc:player/lobby/ui/admin/click/notify", type:"normal"}
 
-function duhc:api/ui/create_button {id:"notify", slot:15, title:"§e開始遊戲", desc:["§7點擊後正式開始遊戲。"], icon:"nether_star", click:"function duhc:game/start/use", type:"normal"}
+function duhc:api/ui/create_button {id:"notify", slot:16, title:"§e開始遊戲", desc:["§7點擊後正式開始遊戲。"], icon:"nether_star", click:"function duhc:game/start/use", type:"normal"}
 
 # --- 裝飾/空氣(air) ---
 function duhc:api/ui/create_button {id:"air", slot:1, title:"", desc:[], icon:"air", click:"", type:"normal"}
@@ -31,8 +33,7 @@ function duhc:api/ui/create_button {id:"air", slot:5, title:"", desc:[], icon:"a
 function duhc:api/ui/create_button {id:"air", slot:6, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:7, title:"", desc:[], icon:"air", click:"", type:"normal"}
 
-function duhc:api/ui/create_button {id:"air", slot:10, title:"", desc:[], icon:"air", click:"", type:"normal"}
-function duhc:api/ui/create_button {id:"air", slot:16, title:"", desc:[], icon:"air", click:"", type:"normal"}
+function duhc:api/ui/create_button {id:"air", slot:15, title:"", desc:[], icon:"air", click:"", type:"normal"}
 
 function duhc:api/ui/create_button {id:"air", slot:19, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:20, title:"", desc:[], icon:"air", click:"", type:"normal"}

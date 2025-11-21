@@ -15,6 +15,9 @@ scoreboard players set @s player.ui.refresh 1
 scoreboard players set @s player.duhc 1
 scoreboard players set @s player.notification 1
 
+scoreboard players add #index player.id 1
+scoreboard players operation @s player.id = #index player.id
+
 # in game
 execute unless score state system matches 1.. run return 0
 

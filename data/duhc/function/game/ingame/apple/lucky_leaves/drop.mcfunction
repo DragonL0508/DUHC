@@ -6,7 +6,7 @@
 #By DragonL
 #--------------------------------------------------
 
-execute unless predicate duhc:chance/005 run kill @s
+execute unless predicate duhc:chance/0005 run kill @s
 
 data modify entity @s Item.id set value "minecraft:golden_apple"
 data remove entity @s Item.components."minecraft:custom_data"

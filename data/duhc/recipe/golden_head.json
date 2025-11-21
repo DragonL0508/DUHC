@@ -25,9 +25,9 @@
 					}
 				]
 			},
-			"minecraft:item_name": "§6Golden Head §c4❤",
+			"minecraft:item_name": "§6金頭顱 §c4❤",
 			"minecraft:consumable": {
-				"consume_seconds": 0.5,
+				"consume_seconds": 1,
 				"on_consume_effects": [
 					{
 						"type": "minecraft:apply_effects",
@@ -45,7 +45,18 @@
 						]
 					}
 				]
-			}
+			},
+			"minecraft:attribute_modifiers": [
+				{
+					"type": "minecraft:block_interaction_range",
+					"id": "duhc.block_ineraction_range",
+					"amount": -999,
+					"operation": "add_value",
+					"display": {
+						"type": "hidden"
+					}
+				}
+			]
 		},
 		"count": 1
 	},

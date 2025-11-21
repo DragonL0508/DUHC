@@ -18,3 +18,6 @@ execute if score @s player.death matches 1.. run function duhc:player/death/use
 # coords message
 scoreboard players enable @s coords
 execute if score @s coords matches 1.. run function duhc:player/ingame/send_coords/use
+
+# attributes
+attribute @s block_interaction_range base reset

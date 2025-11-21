@@ -48,11 +48,11 @@ execute if score advancements settings matches 1 in minecraft:overworld run game
 execute if score advancements settings matches 1 in minecraft:the_nether run gamerule announceAdvancements true
 execute if score advancements settings matches 1 in minecraft:the_end run gamerule announceAdvancements true
 
-# 免燒
-execute if score cut_clean settings matches 1 run function duhc:game/ingame/scenario/cut_clean/use
-
 # 2x 礦物
 execute if score double_ores settings matches 1 run function duhc:game/ingame/scenario/double_ores/use
+
+# 免燒
+execute if score cut_clean settings matches 1 run function duhc:game/ingame/scenario/cut_clean/use
 
 # 2x EXP
 execute if score more_exp settings matches 1 run function duhc:game/ingame/scenario/more_exp/use

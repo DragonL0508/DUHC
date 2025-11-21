@@ -14,6 +14,9 @@ attribute @s jump_strength base reset
 effect give @s resistance 30 100 true
 effect give @s absorption 1 0 true
 
+# start kit
+execute at @n[tag=duhc.lobby] run function duhc:game/start/start_kit
+
 # 隱形保護
 execute if score invisibility settings matches 1 run effect give @s invisibility 300 0 true
 

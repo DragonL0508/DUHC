@@ -16,7 +16,8 @@ gamerule pvp false
 
 # spread players
 
-execute store result storage duhc:main data.temp.distance int 0.5 run scoreboard players get border_size settings
+execute store result storage duhc:main data.temp.distance int 0.25 run scoreboard players get border_size settings
+execute store result storage duhc:main data.temp.max_range int 0.5 run scoreboard players get border_size settings
 function duhc:game/start/spread with storage duhc:main data.temp
 
 scoreboard players set #countdown system 15

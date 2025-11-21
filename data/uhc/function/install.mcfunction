@@ -15,6 +15,7 @@ scoreboard objectives add sidebar dummy
 scoreboard objectives add tick dummy
 scoreboard objectives add settings dummy
 scoreboard objectives add player.health health {"text":"❤",color:red}
+scoreboard objectives add player.id dummy
 scoreboard objectives add player.walk custom:walk_one_cm
 scoreboard objectives add player.sprint custom:sprint_one_cm
 scoreboard objectives add player.lobby_move dummy
@@ -55,6 +56,7 @@ scoreboard players set state system 0
 
 # default settings
 scoreboard players set team_select settings 1
+scoreboard players set spectate settings 1
 scoreboard players set team_count settings 2
 scoreboard players set night_vision settings 1
 scoreboard players set advancements settings 1
@@ -71,10 +73,13 @@ scoreboard players set border_duration settings 20
 scoreboard players set border_size settings 750
 scoreboard players set deathmatch_time settings 60
 scoreboard players set apple_drop_chance settings 5
+scoreboard players set max_item_count settings 160
 
 scoreboard players set #60 temp 60
+scoreboard players set #10 temp 10
 
 # Gamerule
+worldborder warning distance 20
 difficulty peaceful
 weather clear
 time set midnight
@@ -87,6 +92,7 @@ gamerule doInsomnia false
 gamerule pvp false
 gamerule doDaylightCycle false
 gamerule doLimitedCrafting true
+gamerule spectatorsGenerateChunks false
 
 # Team
 team add sidebar.00
@@ -112,13 +118,11 @@ team join sidebar.09 §9
 
 team add spec
 team modify spec color dark_gray
-team modify spec prefix {"text":"旁觀 ", "color":"dark_gray"}
 team modify spec friendlyFire false
 team modify spec nametagVisibility never
 
 team add ffa
 team modify ffa color gray
-team modify ffa prefix {"text":"玩家 ", "color":"gray"}
 team modify ffa friendlyFire true
 team modify ffa nametagVisibility never
 team modify ffa seeFriendlyInvisibles false
