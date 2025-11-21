@@ -29,7 +29,8 @@ execute as @e[type=interaction] run data remove entity @s attack
 
 # not allow entity
 kill @e[predicate=duhc:item/ui_button]
+kill @e[predicate=duhc:item/kit_chest]
 
 # optimization
 execute store result score #item_count system if entity @e[type=item]
-execute if score #item_count system >= max_item_count settings run kill @e[type=item, limit=1, sort=arbitrary]
+execute if score #item_count system >= max_item_count settings as @e[type=item, limit=1, sort=arbitrary] run function duhc:optimization/remove_item
