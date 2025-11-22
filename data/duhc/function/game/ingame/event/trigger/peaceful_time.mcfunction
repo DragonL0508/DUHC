@@ -13,5 +13,11 @@ execute in minecraft:overworld run gamerule spawnMonsters false
 execute in minecraft:the_nether run gamerule spawnMonsters false
 execute in minecraft:the_end run gamerule spawnMonsters false
 
+execute in minecraft:overworld run difficulty peaceful
+execute in minecraft:the_nether run difficulty peaceful
+execute in minecraft:the_end run difficulty peaceful
+
 time set 0
 gamerule doDaylightCycle false
+
+schedule function duhc:game/set_difficulty 1t
