@@ -7,7 +7,7 @@
 #--------------------------------------------------
 
 # remove lobby
-function duhc:game/lobby/remove
+execute if score state system matches 0 run function duhc:game/lobby/remove
 execute as @e[type=marker, tag=duhc.lobby] at @s run forceload remove ~12 ~12 ~-12 ~-12
 
 # uninstall
@@ -50,6 +50,7 @@ kill @e[tag=duhc.lobby.display_entity]
 kill @e[tag=duhc.lobby.interaction]
 kill @e[tag=duhc.lobby.waypoint]
 kill @e[tag=duhc.center.display]
+kill @e[tag=duhc.area.spawn]
 
 team remove sidebar.00
 team remove sidebar.01

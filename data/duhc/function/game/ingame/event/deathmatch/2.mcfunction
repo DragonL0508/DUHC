@@ -7,9 +7,11 @@
 #--------------------------------------------------
 
 kill @e[tag=duhc.center.display]
-execute at @n[type=marker, tag=duhc.lobby] run function duhc:game/ingame/event/deathmatch/area
 
-effect give @a invisibility 3 0 true
-effect give @a resistance 3 100 true
-effect give @a slow_falling 1 0 true
+title @a actionbar {text:"生成競技場中，請稍後...",color:"#ffc240"}
+schedule function duhc:game/ingame/event/deathmatch/area/use 1t append
 
+worldborder set 128
+worldborder set 31 180
+
+schedule function duhc:game/ingame/event/deathmatch/teleport/use 1s append
