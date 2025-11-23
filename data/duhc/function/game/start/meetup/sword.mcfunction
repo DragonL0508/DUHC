@@ -7,7 +7,7 @@
 #--------------------------------------------------
 
 item replace entity @s hotbar.0 with diamond_sword
-execute store result score #temp system run random value 1..5
+execute store result score #temp system run random value 1..10
 
 execute if score #temp system matches 1 run return run item modify entity @s hotbar.0 duhc:item/meetup/fire_aspect
 item modify entity @s hotbar.0 duhc:item/meetup/sharpness
