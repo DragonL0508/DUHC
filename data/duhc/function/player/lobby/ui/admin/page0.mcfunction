@@ -24,6 +24,8 @@ function duhc:api/ui/create_button {id:"notify", slot:14, title:"§e遊戲準備
 
 function duhc:api/ui/create_button {id:"notify", slot:16, title:"§e開始遊戲", desc:["§7點擊後正式開始遊戲。"], icon:"nether_star", click:"function duhc:game/start/use", type:"normal"}
 
+function duhc:api/ui/create_button {id:"meetup", slot:7, title:"§eUHC Meetup模式:", desc:["§7啟用後遊戲會變成經典的UHC Meetup模式，","§7玩家在一開始就會獲得隨機的裝備。"], icon:"lava_bucket", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+
 # --- 裝飾/空氣(air) ---
 function duhc:api/ui/create_button {id:"air", slot:1, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:2, title:"", desc:[], icon:"air", click:"", type:"normal"}
@@ -31,7 +33,6 @@ function duhc:api/ui/create_button {id:"air", slot:3, title:"", desc:[], icon:"a
 function duhc:api/ui/create_button {id:"air", slot:4, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:5, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:6, title:"", desc:[], icon:"air", click:"", type:"normal"}
-function duhc:api/ui/create_button {id:"air", slot:7, title:"", desc:[], icon:"air", click:"", type:"normal"}
 
 function duhc:api/ui/create_button {id:"air", slot:15, title:"", desc:[], icon:"air", click:"", type:"normal"}
 

@@ -29,3 +29,5 @@ execute if score enchanted_gap settings matches 1 run function duhc:player/ingam
 execute if score brewing settings matches 1 run function duhc:player/ingame/scenario/no_brewing
 
 execute if score suspicious_soup settings matches 1 run function duhc:player/ingame/scenario/no_suspicious_soup
+
+execute if score bow_nerf settings matches 1 as @e[type=arrow, tag=!duhc.bow_nerf] run function duhc:player/ingame/scenario/bow_nerf

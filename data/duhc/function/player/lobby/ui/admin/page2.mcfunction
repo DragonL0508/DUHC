@@ -15,7 +15,6 @@ function duhc:api/ui/create_button {id:"blank_1", slot:8, title:"", desc:[], ico
 function duhc:api/ui/create_button {id:"blank_2", slot:9, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_3", slot:17, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 
-function duhc:api/ui/create_button {id:"air", slot:11, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:12, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:13, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:14, title:"", desc:[], icon:"air", click:"", type:"normal"}
@@ -45,3 +44,6 @@ function duhc:api/ui/create_button {id:"brewing", slot:6, title:"§e禁用釀造
 function duhc:api/ui/create_button {id:"suspicious_soup", slot:7, title:"§e禁用可疑的燉湯:", desc:["§6可疑的燉湯§7會被系統回收。"], icon:"mushroom_stew", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
 function duhc:api/ui/create_button {id:"invisibility", slot:10, title:"§e隱形保護:", desc:["§7玩家在開場五分鐘會獲得隱形效果。"], icon:"glass", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
+
+data modify storage duhc:main data.temp.range set value {min:1, max:1000, n:1}
+function duhc:api/ui/create_button {id:"apple_drop_chance", slot:11, title:"§e蘋果掉落率:", desc:["§7調整蘋果的掉落機率","§7掉落率為 §6數值 x 0.1%"], icon:"apple", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}
