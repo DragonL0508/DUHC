@@ -11,7 +11,4 @@ kill @e[tag=duhc.center.display]
 title @a actionbar {text:"生成競技場中，請稍後...",color:"#ffc240"}
 schedule function duhc:game/ingame/event/deathmatch/area/use 1t append
 
-worldborder set 128
-worldborder set 31 180
-
 schedule function duhc:game/ingame/event/deathmatch/teleport/use 1s append
