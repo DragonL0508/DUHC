@@ -1,0 +1,9 @@
+{
+	"function": "minecraft:set_enchantments",
+	"enchantments": {
+		"minecraft:protection": {
+			"min": 1,
+			"max": 2
+		}
+	}
+}

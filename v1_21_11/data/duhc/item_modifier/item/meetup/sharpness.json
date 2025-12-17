@@ -1,0 +1,9 @@
+{
+	"function": "minecraft:set_enchantments",
+	"enchantments": {
+		"minecraft:sharpness": {
+			"min": 1,
+			"max": 2
+		}
+	}
+}

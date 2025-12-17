@@ -1,0 +1,5 @@
+{
+    "function": "set_lore",
+    "lore": [""],
+    "mode": "append"
+}
