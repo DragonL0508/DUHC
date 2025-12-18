@@ -9,6 +9,9 @@
 # scenario
 function duhc:player/ingame/scenario/main
 
+# actionbar
+function duhc:player/ingame/actionbar
+
 # hurt message
 execute if score @s player.hurt matches 1.. unless entity @s[team=ffa] run teammsg 受到了傷害
 

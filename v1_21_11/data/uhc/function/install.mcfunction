@@ -80,6 +80,9 @@ scoreboard players set #30 temp 30
 scoreboard players set #20 temp 20
 scoreboard players set #10 temp 10
 
+execute store result score center_x system run data get entity @s Pos[0]
+execute store result score center_z system run data get entity @s Pos[2]
+
 # Gamerule
 worldborder warning distance 20
 difficulty peaceful
