@@ -12,5 +12,5 @@ scoreboard players operation #temp system += @s player.mined.deepslate_diamond_o
 
 execute unless score #temp system matches 1.. run return 0
 
-damage @s 1 magic
+damage @s 1 indirect_magic
 function duhc:chat/system/format {target:"@s", msg:"你因為 §c血鑽模式 §f受到了1點傷害!"}
