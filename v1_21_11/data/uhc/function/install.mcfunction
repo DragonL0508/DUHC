@@ -85,6 +85,7 @@ execute store result score center_z system run data get entity @s Pos[2]
 
 # Gamerule
 worldborder warning distance 20
+worldborder damage buffer 0
 difficulty peaceful
 weather clear
 time set midnight

@@ -13,4 +13,4 @@ tag @e remove duhc.area.spawn.used
 tp @a[gamemode=spectator] @n[type=marker, tag=duhc.lobby]
 
 worldborder set 128
-worldborder set 1 180
+worldborder set 10 180
