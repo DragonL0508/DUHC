@@ -22,8 +22,7 @@ function duhc:game/set_difficulty
 function duhc:game/start/animation/use
 
 # center display
-kill @e[tag=duhc.center.display]
-execute as @n[type=armor_stand, tag=duhc.lobby.waypoint] at @s run summon item_display ~ ~50 ~ {Tags:["duhc.center.display"], teleport_duration:1, transformation:{left_rotation:[0.0f, 0.0f, 0.0f, 1.0f], right_rotation:[0.0f, 0.0f, 0.0f, 1.0f], scale:[10.0f, 10.0f, 10.0f], translation:[0.0f, 0.0f, 0.0f]}, item:{id:"yellow_stained_glass"}, Glowing:1b, glow_color_override:16775936}
+function duhc:game/start/center_display
 
 # scheduler start
 function duhc:game/ingame/scheduler
