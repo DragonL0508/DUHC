@@ -17,3 +17,8 @@ execute if score 7 team.left matches 1 run scoreboard players add result team.le
 execute if score 8 team.left matches 1 run scoreboard players add result team.left 1
 execute if score 9 team.left matches 1 run scoreboard players add result team.left 1
 execute if score 10 team.left matches 1 run scoreboard players add result team.left 1
+execute if score 11 team.left matches 1 run scoreboard players add result team.left 1
+execute if score 12 team.left matches 1 run scoreboard players add result team.left 1
+execute if score 13 team.left matches 1 run scoreboard players add result team.left 1
+execute if score 14 team.left matches 1 run scoreboard players add result team.left 1
+execute if score 15 team.left matches 1 run scoreboard players add result team.left 1

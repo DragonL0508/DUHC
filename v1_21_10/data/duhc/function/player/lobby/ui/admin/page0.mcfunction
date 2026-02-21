@@ -17,7 +17,7 @@ function duhc:api/ui/create_button {id:"team_select", slot:11, title:"§e自由�
 
 function duhc:api/ui/create_button {id:"team_split", slot:12, title:"§e隨機分隊", desc:["§7隨機將玩家分成不同隊伍，","§7隊伍數量依設定而定。"], icon:"brush", click:"function duhc:player/lobby/ui/admin/click/team_split", type:"normal"}
 
-data modify storage duhc:main data.temp.range set value {min:1, max:8, n:1}
+data modify storage duhc:main data.temp.range set value {min:1, max:15, n:1}
 function duhc:api/ui/create_button {id:"team_count", slot:13, title:"§e隊伍數量:", desc:["§7最大隊伍數量。"], icon:"oak_hanging_sign", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}
 
 function duhc:api/ui/create_button {id:"notify", slot:14, title:"§e遊戲準備開始", desc:["§7點擊後提示所有玩家遊戲即將開始，","§7管理員可依照聊天室視情況決定是否開始。"], icon:"bell", click:"function duhc:player/lobby/ui/admin/click/notify", type:"normal"}
