@@ -16,6 +16,7 @@ title @a actionbar ""
 execute as @a at @s run playsound entity.ender_dragon.ambient master @s ~ ~ ~ .5 1
 
 # difficulty
+execute store result score game_difficulty settings run difficulty
 function duhc:game/set_difficulty
 
 # animation?

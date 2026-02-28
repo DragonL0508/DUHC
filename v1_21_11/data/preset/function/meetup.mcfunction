@@ -52,5 +52,7 @@ scoreboard players set border_duration settings 5
 scoreboard players set border_size settings 250
 scoreboard players set deathmatch_time settings 5
 
+difficulty hard
+
 # 不要動
 execute as @a[scores={player.duhc=2}] run scoreboard players set @s player.ui.refresh 1
