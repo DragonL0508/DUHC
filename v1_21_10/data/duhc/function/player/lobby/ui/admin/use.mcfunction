@@ -13,6 +13,9 @@ execute if score @s player.ui.page matches 2 run function duhc:player/lobby/ui/a
 execute if score @s player.ui.page matches 3 run function duhc:player/lobby/ui/admin/page3
 execute if score @s player.ui.page matches 4 run function duhc:player/lobby/ui/admin/page4
 
+# set lead
+execute if score @s admin.set_lead matches 1.. run function duhc:player/lobby/ui/admin/click/set_leader/click/use
+
 # value menu
 execute if score @s player.ui.page matches 99 unless entity @n[type=item_display, tag=duhc.settings.value, distance=..0.1] run return run function duhc:player/lobby/ui/value/click/back
 execute if score @s player.ui.page matches 99 run function duhc:player/lobby/ui/value/use with entity @n[type=item_display, tag=duhc.settings.value] item.components."minecraft:custom_data"
