@@ -8,6 +8,7 @@
 
 # entity tick
 execute as @e[type=marker, tag=duhc.lobby] at @s run function duhc:game/lobby/particle/border
+execute as @n[type=marker, tag=duhc.lobby] at @s run particle end_rod ~ ~10 ~ 15 5 15 0 3 force @a
 execute as @e[type=interaction, tag=duhc.lobby.info] on attacker run function duhc:game/lobby/info
 execute as @e[type=interaction, tag=duhc.lobby.info] on target run function duhc:game/lobby/info
 
