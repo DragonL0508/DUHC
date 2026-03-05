@@ -12,6 +12,7 @@ function duhc:game/lobby/remove
 
 time set 0
 gamerule advance_time true
+gamerule spawn_mobs true
 gamerule pvp false
 
 # spread players

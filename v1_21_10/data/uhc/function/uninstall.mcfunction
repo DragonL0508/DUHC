@@ -78,6 +78,7 @@ gamerule doInsomnia true
 gamerule pvp true
 gamerule doDaylightCycle true
 gamerule doLimitedCrafting false
+gamerule doMobSpawn true
 
 # 
 schedule clear duhc:game/ingame/scheduler

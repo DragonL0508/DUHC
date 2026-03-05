@@ -78,6 +78,7 @@ gamerule pvp true
 gamerule advance_time true
 gamerule limited_crafting false
 gamerule spawner_blocks_work true
+gamerule spawn_mobs true
 
 # 
 schedule clear duhc:game/ingame/scheduler

@@ -98,6 +98,7 @@ gamerule pvp false
 gamerule advance_time false
 gamerule limited_crafting true
 gamerule spawner_blocks_work true
+gamerule spawn_mobs false
 
 # Team
 team add sidebar.00
