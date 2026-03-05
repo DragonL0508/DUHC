@@ -27,7 +27,7 @@ scoreboard players set free_enchant settings 0
 scoreboard players set broadcast settings 0
 scoreboard players set hastey_boy settings 0
 scoreboard players set timber settings 0
-scoreboard players set night_vision settings 1
+scoreboard players set night_vision settings 0
 
 scoreboard players set regeneration settings 0
 scoreboard players set advancements settings 1

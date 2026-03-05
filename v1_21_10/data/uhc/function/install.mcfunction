@@ -29,8 +29,10 @@ scoreboard objectives add player.kills totalKillCount
 scoreboard objectives add player.notification dummy
 scoreboard objectives add player.hurt custom:damage_taken
 scoreboard objectives add coords trigger
+scoreboard objectives add player.team.lead dummy
 scoreboard objectives add team.left dummy
 scoreboard objectives add admin.last_page dummy
+scoreboard objectives add admin.set_lead trigger
 
 scoreboard objectives add player.mined.diamond_ore mined:diamond_ore
 scoreboard objectives add player.mined.deepslate_diamond_ore mined:deepslate_diamond_ore
@@ -59,7 +61,7 @@ scoreboard players set state system 0
 scoreboard players set team_select settings 1
 scoreboard players set spectate settings 1
 scoreboard players set team_count settings 2
-scoreboard players set night_vision settings 1
+scoreboard players set night_vision settings 0
 scoreboard players set advancements settings 1
 scoreboard players set health_display settings 1
 

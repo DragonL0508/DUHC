@@ -23,6 +23,7 @@ scoreboard objectives remove player.sprint
 scoreboard objectives remove player.lobby_move
 scoreboard objectives remove player.team
 scoreboard objectives remove player.team.last
+scoreboard objectives remove player.team.lead
 scoreboard objectives remove player.ui.refresh
 scoreboard objectives remove player.duhc
 scoreboard objectives remove player.ui.page
@@ -38,6 +39,7 @@ scoreboard objectives remove player.hurt
 scoreboard objectives remove coords
 scoreboard objectives remove team.left
 scoreboard objectives remove admin.last_page
+scoreboard objectives remove admin.set_lead
 scoreboard objectives remove stats.kill_count
 scoreboard objectives remove stats.damage_taken
 scoreboard objectives remove stats.golden_apple

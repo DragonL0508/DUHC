@@ -26,6 +26,8 @@ function duhc:api/ui/create_button {id:"notify", slot:16, title:"§e開始遊戲
 
 function duhc:api/ui/create_button {id:"meetup", slot:7, title:"§eUHC Meetup模式:", desc:["§7啟用後遊戲會變成經典的UHC Meetup模式，","§7玩家在一開始就會獲得隨機的裝備。"], icon:"lava_bucket", click:"function duhc:player/lobby/ui/admin/click/toggle", type:"toggle"}
 
+function duhc:api/ui/create_button {id:"air", slot:21, title:"§e設定小隊長", desc:["§7可以設定誰要當小隊長，","§7小隊長§6永遠不會§7被分到同一隊。"], icon:"lead", click:"function duhc:player/lobby/ui/admin/click/set_leader/use", type:"normal"}
+
 # --- 裝飾/空氣(air) ---
 function duhc:api/ui/create_button {id:"air", slot:1, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:2, title:"", desc:[], icon:"air", click:"", type:"normal"}
@@ -38,7 +40,6 @@ function duhc:api/ui/create_button {id:"air", slot:15, title:"", desc:[], icon:"
 
 function duhc:api/ui/create_button {id:"air", slot:19, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:20, title:"", desc:[], icon:"air", click:"", type:"normal"}
-function duhc:api/ui/create_button {id:"air", slot:21, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:22, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:23, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:24, title:"", desc:[], icon:"air", click:"", type:"normal"}
