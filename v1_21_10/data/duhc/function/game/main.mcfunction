@@ -16,6 +16,7 @@ execute if score #tips_timer system matches 1200 run function duhc:game/random_t
 # 玩家夜視
 effect clear @a night_vision
 execute if score night_vision settings matches 1 run effect give @a night_vision infinite 0 true
+effect give @a[gamemode=spectator] night_vision infinite 0 true
 
 # apple drop
 execute as @e[predicate=duhc:item/apple] run function duhc:game/ingame/apple/init
