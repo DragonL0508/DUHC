@@ -98,7 +98,7 @@ gamerule doInsomnia false
 gamerule pvp false
 gamerule doDaylightCycle false
 gamerule doLimitedCrafting true
-gamerule doMobSpawn false
+gamerule doMobSpawning false
 
 # Team
 team add sidebar.00

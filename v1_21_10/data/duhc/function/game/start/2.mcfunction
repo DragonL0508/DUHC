@@ -12,7 +12,7 @@ function duhc:game/lobby/remove
 
 time set 0
 gamerule doDaylightCycle true
-gamerule doMobSpawn true
+gamerule doMobSpawning true
 gamerule pvp false
 
 # spread players
