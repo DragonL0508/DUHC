@@ -13,6 +13,7 @@ attribute @s movement_speed base reset
 attribute @s jump_strength base reset
 effect give @s resistance 30 100 true
 effect give @s absorption 1 0 true
+scoreboard players reset @s admin.set_lead
 
 # start kit
 execute at @n[tag=duhc.lobby] run function duhc:game/start/start_kit

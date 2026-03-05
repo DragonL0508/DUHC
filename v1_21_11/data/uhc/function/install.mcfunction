@@ -21,6 +21,7 @@ scoreboard objectives add player.sprint custom:sprint_one_cm
 scoreboard objectives add player.lobby_move dummy
 scoreboard objectives add player.team dummy
 scoreboard objectives add player.team.last dummy
+scoreboard objectives add player.team.lead dummy
 scoreboard objectives add player.ui.refresh dummy
 scoreboard objectives add player.duhc dummy
 scoreboard objectives add player.ui.page dummy
@@ -29,6 +30,7 @@ scoreboard objectives add player.kills totalKillCount
 scoreboard objectives add player.notification dummy
 scoreboard objectives add player.hurt custom:damage_taken
 scoreboard objectives add coords trigger
+scoreboard objectives add admin.set_lead trigger
 scoreboard objectives add team.left dummy
 scoreboard objectives add admin.last_page dummy
 
