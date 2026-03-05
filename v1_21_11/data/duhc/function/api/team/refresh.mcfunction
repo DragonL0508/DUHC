@@ -27,3 +27,5 @@ execute if score team_count settings matches 15.. run function duhc:api/team/cre
 
 scoreboard players set @a[tag=duhc.team.spec] player.team -1
 tag @a remove duhc.team.spec
+
+scoreboard players set @a player.team.last -9999

@@ -22,6 +22,7 @@ scoreboard objectives remove player.walk
 scoreboard objectives remove player.sprint
 scoreboard objectives remove player.lobby_move
 scoreboard objectives remove player.team
+scoreboard objectives remove player.team.last
 scoreboard objectives remove player.ui.refresh
 scoreboard objectives remove player.duhc
 scoreboard objectives remove player.ui.page
