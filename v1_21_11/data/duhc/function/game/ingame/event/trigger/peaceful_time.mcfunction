@@ -25,3 +25,4 @@ time set 0
 gamerule advance_time false
 
 schedule function duhc:game/set_difficulty 1t
+schedule function duhc:game/ingame/event/no_monster 1t

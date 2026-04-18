@@ -60,6 +60,7 @@ scoreboard players set state system 0
 # default settings
 scoreboard players set team_select settings 1
 scoreboard players set spectate settings 1
+scoreboard players set team_nametag settings 1
 scoreboard players set team_count settings 2
 scoreboard players set night_vision settings 0
 scoreboard players set advancements settings 1

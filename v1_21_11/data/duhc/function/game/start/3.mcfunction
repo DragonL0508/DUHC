@@ -25,5 +25,9 @@ function duhc:game/start/animation/use
 # center display
 function duhc:game/start/center_display
 
+# nametag
+execute unless score team_nametag settings matches 1 run function duhc:api/team/name_tag/hide_none
+execute if score team_nametag settings matches 1 run function duhc:api/team/name_tag/hide_all
+
 # scheduler start
 function duhc:game/ingame/scheduler

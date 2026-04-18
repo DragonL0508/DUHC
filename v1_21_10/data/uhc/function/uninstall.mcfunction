@@ -88,6 +88,7 @@ schedule clear duhc:game/ingame/scheduler
 schedule clear duhc:game/start/2
 schedule clear duhc:game/start/countdown
 schedule clear duhc:game/ingame/event/no_nether
+schedule clear duhc:game/ingame/event/no_monster
 schedule clear duhc:game/ingame/event/deathmatch/countdown
 
 schedule clear duhc:game/end/message/kill_count

@@ -21,3 +21,4 @@ time set 0
 gamerule doDaylightCycle false
 
 schedule function duhc:game/set_difficulty 1t
+schedule function duhc:game/ingame/event/no_monster 1t

@@ -13,4 +13,6 @@ data modify storage duhc:main data.temp.team set from storage duhc:main data.tea
 scoreboard players set @a[team=!spec] player.team 0
 scoreboard players set #temp system 1
 function duhc:api/team/split/lead
+scoreboard players set #temp system 1
+function duhc:api/team/split/fill_empty
 function duhc:api/team/split/2
