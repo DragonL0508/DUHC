@@ -29,5 +29,8 @@ function duhc:game/start/center_display
 execute unless score team_nametag settings matches 1 run function duhc:api/team/name_tag/hide_none
 execute if score team_nametag settings matches 1 run function duhc:api/team/name_tag/hide_all
 
+# friendly fire
+execute if score friendly_fire settings matches 1 run function duhc:api/team/friendly_fire/use {bool:"true"}
+
 # scheduler start
 function duhc:game/ingame/scheduler
