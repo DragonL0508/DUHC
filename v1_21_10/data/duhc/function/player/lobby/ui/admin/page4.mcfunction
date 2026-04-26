@@ -41,7 +41,7 @@ function duhc:api/ui/create_button {id:"air", slot:24, title:"", desc:[], icon:"
 function duhc:api/ui/create_button {id:"air", slot:25, title:"", desc:[], icon:"air", click:"", type:"normal"}
 
 # --- 裝飾(blank) ---
-function duhc:api/ui/create_button {id:"blank_1", slot:8, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
+function duhc:api/ui/create_button {id:"export", slot:8, title:"§e儲存設定至指令方塊", desc:["§7給予一個重複執行指令方塊，","§7放置後即可自動套用當前設定。"], icon:"repeating_command_block", click:"function duhc:player/lobby/ui/admin/click/export/use", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_2", slot:9, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_3", slot:17, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"blank_4", slot:26, title:"", desc:[], icon:"black_stained_glass_pane", click:"", type:"normal"}

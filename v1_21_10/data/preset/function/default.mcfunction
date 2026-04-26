@@ -13,6 +13,7 @@ function duhc:chat/system/format {target:"@s", msg:"已載入預設: Default"}
 scoreboard players set more_crafting settings 1
 scoreboard players set cut_clean settings 0
 scoreboard players set death_chest settings 0
+scoreboard players set time_bomb settings 0
 scoreboard players set double_ores settings 0
 scoreboard players set blood_diamond settings 0
 scoreboard players set blood_enchant settings 0
@@ -28,10 +29,13 @@ scoreboard players set broadcast settings 0
 scoreboard players set hastey_boy settings 0
 scoreboard players set timber settings 0
 scoreboard players set night_vision settings 0
+scoreboard players set bow_nerf settings 0
+scoreboard players set meetup settings 0
 
 scoreboard players set regeneration settings 0
 scoreboard players set advancements settings 1
 scoreboard players set friendly_fire settings 0
+scoreboard players set team_nametag settings 1
 scoreboard players set health_display settings 1
 scoreboard players set enchanted_gap settings 0
 scoreboard players set brewing settings 0
@@ -49,6 +53,7 @@ scoreboard players set border_start_time settings 30
 scoreboard players set border_duration settings 20
 scoreboard players set border_size settings 750
 scoreboard players set deathmatch_time settings 60
+scoreboard players set max_item_count settings 160
 
 difficulty hard
 
