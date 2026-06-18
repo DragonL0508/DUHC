@@ -3,7 +3,7 @@
     "pack_format": 88,
     "description": "一個全新版本，可持續維護的UHC核心。",
     "min_format": 88,
-    "max_format": 94
+    "max_format": [107, 1]
   },
   "overlays": {
     "entries": [
@@ -15,7 +15,12 @@
       {
         "directory": "v1_21_11",
         "min_format": [94, 0],
-        "max_format": [94, 1]
+        "max_format": [107, 1]
+      },
+      {
+        "directory": "v26_2",
+        "min_format": [107, 0],
+        "max_format": [107, 1]
       }
     ]
   }
