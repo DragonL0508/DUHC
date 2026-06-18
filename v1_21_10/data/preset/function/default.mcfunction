@@ -53,6 +53,7 @@ scoreboard players set border_start_time settings 30
 scoreboard players set border_duration settings 20
 scoreboard players set border_size settings 750
 scoreboard players set deathmatch_time settings 60
+scoreboard players set deathmatch_type settings 0
 scoreboard players set max_item_count settings 160
 
 difficulty hard

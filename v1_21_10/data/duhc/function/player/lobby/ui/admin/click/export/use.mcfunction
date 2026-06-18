@@ -48,6 +48,7 @@ execute store result storage duhc:main data.export.border_start_time int 1 run s
 execute store result storage duhc:main data.export.border_duration int 1 run scoreboard players get border_duration settings
 execute store result storage duhc:main data.export.border_size int 1 run scoreboard players get border_size settings
 execute store result storage duhc:main data.export.deathmatch_time int 1 run scoreboard players get deathmatch_time settings
+execute store result storage duhc:main data.export.deathmatch_type int 1 run scoreboard players get deathmatch_type settings
 execute store result storage duhc:main data.export.max_item_count int 1 run scoreboard players get max_item_count settings
 
 # 難度轉換為字串

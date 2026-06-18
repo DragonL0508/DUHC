@@ -52,7 +52,7 @@ data modify storage duhc:main data.temp.range set value {min:50, max:1000, n:5}
 function duhc:api/ui/create_button {id:"max_item_count", slot:21, title:"§e掉落物最大數量:", desc:["§7控制世界掉落物數量，","§7避免多人遊玩時TPS嚴重降低。"], icon:"feather", click:"function duhc:player/lobby/ui/admin/click/value", type:"value"}
 
 function duhc:api/ui/create_button {id:"air", slot:7, title:"", desc:[], icon:"air", click:"", type:"normal"}
-function duhc:api/ui/create_button {id:"air", slot:14, title:"", desc:[], icon:"air", click:"", type:"normal"}
+function duhc:player/lobby/ui/admin/deathmatch_type
 function duhc:api/ui/create_button {id:"air", slot:15, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:16, title:"", desc:[], icon:"air", click:"", type:"normal"}
 function duhc:api/ui/create_button {id:"air", slot:22, title:"", desc:[], icon:"air", click:"", type:"normal"}

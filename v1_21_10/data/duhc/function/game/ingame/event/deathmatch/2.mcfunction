@@ -8,7 +8,8 @@
 
 kill @e[tag=duhc.center.display]
 
-title @a actionbar {text:"生成競技場中，請稍後...",color:"#ffc240"}
-schedule function duhc:game/ingame/event/deathmatch/area/use 1t append
+title @a actionbar {text:"生成決戰場地中，請稍後...",color:"#ffc240"}
+execute if score deathmatch_type settings matches 0 run schedule function duhc:game/ingame/event/deathmatch/area/use 1t append
+execute if score deathmatch_type settings matches 1 run schedule function duhc:game/ingame/event/deathmatch/room/use 1t append
 
 schedule function duhc:game/ingame/event/deathmatch/teleport/use 1s append

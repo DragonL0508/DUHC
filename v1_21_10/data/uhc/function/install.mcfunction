@@ -58,26 +58,16 @@ scoreboard players set #install system 1
 scoreboard players set state system 0
 
 # default settings
+
+# 大廳專屬設定 (非 profile 設定, 不隨匯出/載入)
 scoreboard players set team_select settings 1
 scoreboard players set spectate settings 1
-scoreboard players set team_nametag settings 1
 scoreboard players set team_count settings 2
-scoreboard players set night_vision settings 0
-scoreboard players set advancements settings 1
-scoreboard players set health_display settings 1
 
-scoreboard players set pvp_time settings 20
-scoreboard players set nametag_time settings 20
-scoreboard players set nether_time settings 40
-scoreboard players set peaceful_time settings 40
-scoreboard players set player_glow_time settings 50
-scoreboard players set final_regen_time settings 20
-scoreboard players set border_start_time settings 30
-scoreboard players set border_duration settings 20
-scoreboard players set border_size settings 750
-scoreboard players set deathmatch_time settings 60
-scoreboard players set apple_drop_chance settings 5
-scoreboard players set max_item_count settings 160
+# 其餘所有 profile 設定: 從單一來源套用預設值 (見 preset:defaults)
+# (難度不在此套用, 維持 install 不更動世界難度的行為)
+function preset:defaults
+function preset:apply with storage duhc:main data.preset.default
 
 scoreboard players set #60 temp 60
 scoreboard players set #30 temp 30
