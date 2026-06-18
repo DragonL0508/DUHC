@@ -1,5 +1,5 @@
 # 顯示訊息
-function duhc:chat/system/format {target:"@a[scores={player.duhc=2}]", msg:"已載入自訂義預設!"}
+function duhc:chat/system/format {target:"@a[gamemode=creative]", msg:"已載入自訂義預設!"}
 
 # 所有設定
 $scoreboard players set more_crafting settings $(more_crafting)
